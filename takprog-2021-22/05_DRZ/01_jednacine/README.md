@@ -1,7 +1,6 @@
 # Jednačine (Државно 2021-22)
 
-Everything needed to set this task again: [statement](statement.md) (with examples), [testcases](testcases/) (26), [checker](checker.cpp), [scoring](scoring.yaml), and the limits
-and provenance in [task.yaml](task.yaml).
+Everything needed to set this task again: [statement](statement.md) (with examples), [testcases](testcases/) (26), [checker](checker.cpp) and [scoring](scoring.yaml).
 
 **Limits:** 1 s, 64 MB.
 

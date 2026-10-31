@@ -10,8 +10,7 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 
 | File | What |
 |---|---|
-| `README.md` | What was found and fixed, in a few lines |
-| `task.yaml` | Title, limits, test count, and where every part came from on Petlja (problem, test version, competitions) |
+| `README.md` | Limits, and what was found and fixed, in a few lines |
 | `statement.md` | The statement in petljapub format, with examples |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`; exit code 0 = accepted |
