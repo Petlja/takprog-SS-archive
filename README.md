@@ -61,6 +61,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2021-22 | Kvalifikacije 3 | [Min Max Plus](takprog-2021-22/03_KV3/05_min_max_plus) | 3 s | 256 MB | 27 | `checker.cpp` (exact tokens) | All tests were uploaded separately before the contest; they are included |
 | 2021-22 | Okružno | [Odbijanje](takprog-2021-22/04_OKR/01_odbijanje) | 0.5 s | 512 MB | 12 | default | — |
 | 2021-22 | Okružno | [Štale](takprog-2021-22/04_OKR/02_stale) | 1 s | 512 MB | 22 | default | Test 15 was replaced the day before the contest; this is the replaced version |
+| 2021-22 | Okružno | [Okram](takprog-2021-22/04_OKR/03_okram) | 3 s | 512 MB | 21 | `checker.cpp` (exact tokens) | All tests were uploaded separately before the contest; they are included |
 | 2021-22 | Državno | [Jednačine](takprog-2021-22/05_DRZ/01_jednacine) | 1 s | 64 MB | 26 | `checker.cpp` (exact tokens) | Testcases are the set the contest ran on; earlier copies (Petlja's version 4, the 2024 collection) had wrong outputs for tests 8 and 18 |
 | 2021-22 | Državno | [Turnir](takprog-2021-22/05_DRZ/02_turnir) | 2 s | 267 MB | 38 | `checker.cpp` (exact tokens) | — |
 | 2021-22 | Državno | [Burad](takprog-2021-22/05_DRZ/03_burad) | 1 s | 256 MB | 31 | `checker.cpp` (exact tokens) | Tests 27–31 were uploaded separately just before the contest; they are included |
