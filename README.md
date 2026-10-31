@@ -11,8 +11,9 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 | File | What |
 |---|---|
 | `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB) |
+| `*.png` | Pictures the statement shows, if any |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on |
-| `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`; exit code 0 = accepted |
+| `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`; exit code 0 = accepted. Checkers marked *score in exit code* follow Petlja's convention before 2025 instead: a negative exit code is wrong, 0 or more is accepted with that score (divided by `divisor` when `scoring.yaml` has one) |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests |
 
 ## How a task gets here
