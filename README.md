@@ -21,10 +21,14 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 
 ## How a task gets here
 
-Each task is compared across every copy on Petlja (all test versions, checkers, limits and scoring of the
-competition, its testing and archive copies, and the collection). The version the competition really used is chosen,
-and the author solutions are run against it in a copy of Petlja's grader before the task is added. Anything that
-couldn't be found is listed in the task's `README.md`, for the authors to fill in.
+**Tests, limits, checker and scoring come from the competition on Petlja**, as the contest ran. They are taken byte
+for byte from the problem's test version that was live on the contest date, after comparing every copy on Petlja: all
+test versions, the competition, its testing and archive copies. The 2024 collection (`takprog-SS-zbirka-2024`) is not
+used for these: it has fewer tests and different limits. Only the **statement, editorial and author solutions**,
+which the collection shares with the competition, come from it.
+
+The author solutions are run against the chosen tests in a copy of Petlja's grader before the task is added. Anything
+that couldn't be found is listed in the task's `README.md`, for the authors to fill in.
 
 ## Tasks
 
