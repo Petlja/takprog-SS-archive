@@ -4,20 +4,18 @@ season: 2021-22
 round: Državno (05_DRZ)
 time_limit_ms: 1000
 memory_limit_mb: 64
-tests: 26
+testcases: 26
 checker: checker.cpp            # exact token comparison; equivalent to a plain diff of tokens
 scoring: scoring.yaml           # subtasks 0/10/20/35/35, public tests 1-5
-solutions: [solutions/jednacine.cpp, solutions/jednacine-allllekssssa.cpp]
 source:
   # From Petlja's competition problem (production), as the contest ran:
-  tests: Petlja problem 134275, test version 5 (2022-03-25), byte for byte
+  testcases: Petlja problem 134275, test version 5 (2022-03-25), byte for byte
   limits: Petlja problem 134275
   checker: Petlja checker 912 (jednacine-chk)
   scoring: Petlja competition 3310 (2021-2022-drz); identical in 3293, 3314, 3845
   # Shared with the 2024 collection (takprog-SS-zbirka-2024, 21_sezona-2021-22/05_DRZ-2021-22/01_jednacine):
   statement: collection
   editorial: collection
-  solutions: collection
 petlja:
   problem: 134275
   competitions:
@@ -26,4 +24,4 @@ petlja:
     internal: 3293        # drz-2021-2022-komisija
     archive: 3845         # 20212022drzavno-vezba
   collection_problem: 140843   # Zbirka-takmicenja-srednja-skola-jednacine
-verified: 2026-10-31, both solutions accepted on all tests in a copy of Petlja's grader
+verified: 2026-10-31, the collection's two author solutions accepted on all testcases in a copy of Petlja's grader
