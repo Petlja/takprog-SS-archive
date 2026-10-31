@@ -1,0 +1,24 @@
+title: Једначине
+title_latin: Jednačine
+season: 2021-22
+round: Državno (05_DRZ)
+time_limit_ms: 1000
+memory_limit_mb: 64
+tests: 26
+checker: checker.cpp            # exact token comparison; equivalent to a plain diff of tokens
+scoring: scoring.yaml           # subtasks 0/10/20/35/35, public tests 1-5
+solutions: [solutions/jednacine.cpp, solutions/jednacine-allllekssssa.cpp]
+source:
+  tests: Petlja problem 134275, test version 5 (2022-03-25), the set used in the contest
+  checker: Petlja checker 912 (jednacine-chk)
+  scoring: Petlja competition 3310 (2021-2022-drz); identical in 3293, 3314, 3845
+  statement: takprog-SS-zbirka-2024, 21_sezona-2021-22/05_DRZ-2021-22/01_jednacine
+petlja:
+  problem: 134275
+  competitions:
+    real: 3310            # 2021-2022-drz, 2022-03-26
+    testing: 3314         # drz-2021-2022-testiranje
+    internal: 3293        # drz-2021-2022-komisija
+    archive: 3845         # 20212022drzavno-vezba
+  collection_problem: 140843   # Zbirka-takmicenja-srednja-skola-jednacine
+verified: 2026-10-31, both solutions accepted on all tests in a copy of Petlja's grader
