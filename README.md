@@ -26,6 +26,16 @@ which the collection shares with the competition, comes from it.
 The collection's author solutions are run against the chosen testcases in a copy of Petlja's grader before the task is added. Anything
 that couldn't be found is noted in the table below, for the authors to fill in.
 
+## Limits
+
+- **Time limit:** CPU time of the solution on one testcase, not wall-clock time.
+- **Memory limit:** the solution's peak memory on one testcase. Stack may use up to 256 MB within it.
+- **Where they were checked:** Petlja's grader as of 2026. That's Linux on an Intel Xeon Platinum 8272CL at
+  2.6 GHz, with every run sandboxed by [isolate](https://github.com/ioi/isolate). C++ is compiled with g++ 14.2,
+  `-std=gnu++17 -O2 -static`; Python is 3.13.
+- The limits are the ones set for the competition, on the grader of that time (until 2025 a Windows machine with
+  other compilers). Every task's solutions were re-run on today's grader: they pass within the limits.
+
 ## Tasks
 
 Limits are the competition's. *Checker* is `default` when the task uses a plain token comparison and needs no
