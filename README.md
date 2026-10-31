@@ -47,6 +47,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, score in exit code) | The checker returns 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
+| 2021-22 | Kvalifikacije 1 | [Cen\*ura](takprog-2021-22/01_KV1/04_cenzura) | 1 s | 256 MB | 21 | `checker.cpp` (custom, score in exit code) | The checker returns 100 for a correct answer, 80 when only the count is right, −1 otherwise. Test 13 was replaced before the contest; this is the replaced version |
 | 2021-22 | Državno | [Jednačine](takprog-2021-22/05_DRZ/01_jednacine) | 1 s | 64 MB | 26 | `checker.cpp` (exact tokens) | Testcases are the set the contest ran on; earlier copies (Petlja's version 4, the 2024 collection) had wrong outputs for tests 8 and 18 |
 | 2021-22 | Državno | [Turnir](takprog-2021-22/05_DRZ/02_turnir) | 2 s | 267 MB | 38 | `checker.cpp` (exact tokens) | — |
 | 2021-22 | Državno | [Burad](takprog-2021-22/05_DRZ/03_burad) | 1 s | 256 MB | 31 | `checker.cpp` (exact tokens) | Tests 27–31 were uploaded separately just before the contest; they are included |
