@@ -10,7 +10,7 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 
 | File | What |
 |---|---|
-| `statement.md` | The statement in petljapub format, with examples |
+| `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB) |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`; exit code 0 = accepted |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests |

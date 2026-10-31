@@ -1,18 +1,6 @@
 ---
-title: Једначине
 timelimit: 1
 memlimit: 64
-owner: takprog
-origin: null
-tags: []
-status: KOMPLETAN
-status-date: 2024-08-15
-crafted-dir: testcases
-solutions:
-- name: ex0
-  lang: [cpp]
-  desc: ''
-  tags: []
 ---
 
 За дати природан број $n$, означимо са $S(n)$ суму његових цифара. Дакле, $S(12) = 1 + 2 = 3$, $S(1005) = 1 + 0 + 0 + 5 = 6$. Душко воли да испитује својства природних бројева, па је смислио себи задатак. За дате бројеве $X, Y, A, B$ ($X \leq Y$) њега занима да ли постоји неки број $n$ такав да $X \leq n \leq Y$ за који важи да је $n = A \cdot S(n) + B$. 
