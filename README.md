@@ -13,7 +13,7 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 | `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB) |
 | `*.png` | Pictures the statement shows, if any |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on |
-| `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`; exit code 0 = accepted. Checkers marked *score in exit code* follow Petlja's convention before 2025 instead: a negative exit code is wrong, 0 or more is accepted with that score (divided by `divisor` when `scoring.yaml` has one) |
+| `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests |
 
 ## How a task gets here
@@ -44,10 +44,10 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 
 | Season | Round | Task | Time | Memory | Testcases | Checker | Notes |
 |---|---|---|---|---|---|---|---|
-| 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, score in exit code) | The checker returns 5 for a correct answer and −1 otherwise |
+| 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
-| 2021-22 | Kvalifikacije 1 | [Cen\*ura](takprog-2021-22/01_KV1/04_cenzura) | 1 s | 256 MB | 21 | `checker.cpp` (custom, score in exit code) | The checker returns 100 for a correct answer, 80 when only the count is right, −1 otherwise. Test 13 was replaced before the contest; this is the replaced version |
+| 2021-22 | Kvalifikacije 1 | [Cen\*ura](takprog-2021-22/01_KV1/04_cenzura) | 1 s | 256 MB | 21 | `checker.cpp` (custom, converted) | The checker scores 100 for a correct answer and 80 when only the count is right. Test 13 was replaced before the contest; this is the replaced version |
 | 2021-22 | Kvalifikacije 1 | [Noćna vožnja](takprog-2021-22/01_KV1/05_nocnavoznja) | 4 s | 256 MB | 21 | default | All tests were uploaded separately before the contest; they are included |
 | 2021-22 | Kvalifikacije 2 | [Mađioničar](takprog-2021-22/02_KV2/01_madjionicar) | 1 s | 256 MB | 22 | default | — |
 | 2021-22 | Kvalifikacije 2 | [Ekskurzija](takprog-2021-22/02_KV2/02_ekskurzija) | 0.1 s | 256 MB | 11 | default | — |
