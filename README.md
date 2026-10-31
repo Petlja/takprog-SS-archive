@@ -10,7 +10,6 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 
 | File | What |
 |---|---|
-| `README.md` | Limits, and what was found and fixed, in a few lines |
 | `statement.md` | The statement in petljapub format, with examples |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`; exit code 0 = accepted |
@@ -25,10 +24,13 @@ used for these: it has fewer tests and different limits. Only the **statement**,
 which the collection shares with the competition, comes from it.
 
 The collection's author solutions are run against the chosen testcases in a copy of Petlja's grader before the task is added. Anything
-that couldn't be found is listed in the task's `README.md`, for the authors to fill in.
+that couldn't be found is noted in the table below, for the authors to fill in.
 
 ## Tasks
 
-| Season | Round | Task | Status |
-|---|---|---|---|
-| 2021-22 | Državno | [Jednačine](takprog-2021-22/05_DRZ/01_jednacine) | complete |
+Limits are the competition's. *Checker* is `default` when the task uses a plain token comparison and needs no
+`checker.cpp`.
+
+| Season | Round | Task | Time | Memory | Testcases | Checker | Notes |
+|---|---|---|---|---|---|---|---|
+| 2021-22 | Državno | [Jednačine](takprog-2021-22/05_DRZ/01_jednacine) | 1 s | 64 MB | 26 | `checker.cpp` (exact tokens) | Testcases are the set the contest ran on; earlier copies (Petlja's version 4, the 2024 collection) had wrong outputs for tests 8 and 18 |
