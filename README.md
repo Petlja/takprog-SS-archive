@@ -45,6 +45,12 @@ contest's set is the last version uploaded before the contest ended, with any te
 ended. Where the commission corrected tests during a contest and graded every submission again, the set is the
 corrected one.
 
+In 2019-20 and 2020-21 the statements come from the collection, except SIO, which it doesn't have (those are
+Petlja's Markdown originals). For four 2020-21 tasks Petlja's storage no longer has every test the contest graded
+(the grader of the time kept tests from earlier uploads). Where an earlier upload on Petlja still has them, they come
+from there; otherwise from the collection, which matches every test Petlja does have. Submissions accepted at the
+contest pass the completed sets. The task's note says which tests these are.
+
 ## Limits
 
 - **Time limit:** CPU time of the solution on one testcase, not wall-clock time.
