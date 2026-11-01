@@ -317,3 +317,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | SIO | [Viae Romanae](takprog-2023-24/05_SIO/05_viae_romanae) | 1.5 s | 256 MB | 104 | default, `grader/` | Functional |
 | 2023-24 | SIO | [Turris inclinata](takprog-2023-24/05_SIO/06_turris_inclinata) | 1.5 s | 256 MB | 80 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
 | 2024-25 | Kvalifikacije 1 | [Pećina](takprog-2024-25/01_KV1/01_pecina) | 0.2 s | 64 MB | 23 | default | — |
+| 2024-25 | Kvalifikacije 1 | [Plazma](takprog-2024-25/01_KV1/02_plazma) | 3 s | 128 MB | 52 | default | All tests were uploaded separately before the contest; they are included |
