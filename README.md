@@ -328,3 +328,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2024-25 | Kvalifikacije 2 | [Zanimljivi grafovski upiti](takprog-2024-25/02_KV2/05_zanimljivi_grafovski_upiti) | 8.5 s | 1024 MB | 22 | default | — |
 | 2024-25 | Kvalifikacije za izborno | [Karte 3](takprog-2024-25/A_PIZ/01_karte_3) | 1 s | 256 MB | 21 | default | — |
 | 2024-25 | Kvalifikacije za izborno | [Najveća pojava](takprog-2024-25/A_PIZ/02_najveca_pojava) | 1.5 s | 256 MB | 73 | default | — |
+| 2024-25 | Kvalifikacije za izborno | [Radoje](takprog-2024-25/A_PIZ/03_radoje) | 1 s | 256 MB | 56 | `checker.cpp` (custom) | — |
