@@ -333,3 +333,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2024-25 | Izborno | [Uzumaki](takprog-2024-25/B_IZB/01_uzumaki) | 4 s | 256 MB | 56 | default, `grader/` | Functional |
 | 2024-25 | Izborno | [Mesi](takprog-2024-25/B_IZB/02_mesi) | 0.5 s | 128 MB | 70 | default, `grader/` | Functional |
 | 2024-25 | Izborno | [Šafler](takprog-2024-25/B_IZB/03_safler) | 1.5 s | 256 MB | 25 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
+| 2024-25 | Izborno | [Nalbandian](takprog-2024-25/B_IZB/04_nalbandian) | 3 s | 256 MB | 82 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
