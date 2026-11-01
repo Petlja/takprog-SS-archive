@@ -259,3 +259,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2022-23 | Kvalifikacije 1 | [Sudar](takprog-2022-23/01_KV1/01_sudar) | 0.1 s | 32 MB | 45 | default | — |
 | 2022-23 | Kvalifikacije 1 | [Nameštanje glasanja](takprog-2022-23/01_KV1/02_namestanjeg) | 1 s | 64 MB | 35 | `checker.cpp` (custom) | Test 1 was replaced during the contest by the statement's example, and every submission was graded again; this is the replaced version |
 | 2022-23 | Kvalifikacije 1 | [Sante](takprog-2022-23/01_KV1/03_sante) | 1 s | 64 MB | 22 | default | — |
+| 2022-23 | Kvalifikacije 1 | [Vage](takprog-2022-23/01_KV1/04_vage) | 2 s | 256 MB | 22 | default | Tests 16–22 were replaced separately before the contest; this is the replaced version |
