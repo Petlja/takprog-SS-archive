@@ -308,3 +308,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | Državno | [Palindromska šetnja](takprog-2023-24/04_DRZ/06_palindromska_setnja) | 3 s | 256 MB | 102 | default | — |
 | 2023-24 | SIO | [Spartacus](takprog-2023-24/05_SIO/01_spartacus) | 0.1 s | 256 MB | 68 | `checker.cpp` (exact tokens), `grader/` | Functional |
 | 2023-24 | SIO | [Et tu, Brute?](takprog-2023-24/05_SIO/02_et_tu_brute) | 1.5 s | 256 MB | 50 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included. The 2024 collection has a different output for test 4 |
+| 2023-24 | SIO | [E pluribus unum](takprog-2023-24/05_SIO/03_e_pluribus_unum) | 3.5 s | 256 MB | 93 | default, `grader/` | Functional |
