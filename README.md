@@ -192,6 +192,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2019-20 | SIO | [Dido](takprog-2019-20/06_SIO/04_dido) | 1 s | 512 MB | 30 | `checker.cpp` (custom), `grader/` | Functional |
 | 2019-20 | SIO | [Mračna soba](takprog-2019-20/06_SIO/05_mracna_soba) | 1.5 s | 64 MB | 42 | `checker.cpp` (exact tokens), `grader/` | Functional |
 | 2019-20 | SIO | [Metro](takprog-2019-20/06_SIO/06_metro) | 1 s | 512 MB | 18 | default, `grader/` | Functional |
+| 2020-21 | Kvalifikacije 1 | [Minimalan trud](takprog-2020-21/01_KV1/01_trud) | 1 s | 256 MB | 12 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
