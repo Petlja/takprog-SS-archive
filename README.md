@@ -51,6 +51,10 @@ Petlja's Markdown originals). For four 2020-21 tasks Petlja's storage no longer 
 from there; otherwise from the collection, which matches every test Petlja does have. Submissions accepted at the
 contest pass the completed sets. The task's note says which tests these are.
 
+In 2022-23 the statements come from the collection, SIO included. Where the commission uploaded tests again during a
+contest, every earlier submission was graded again, so the set is the one Petlja had at the end; the task's note
+says so where the tests changed.
+
 ## Limits
 
 - **Time limit:** CPU time of the solution on one testcase, not wall-clock time.
