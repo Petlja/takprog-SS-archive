@@ -51,6 +51,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 
 | Season | Round | Task | Time | Memory | Testcases | Checker | Notes |
 |---|---|---|---|---|---|---|---|
+| 2016-17 | Kvalifikacije | [Trotoar](takprog-2016-17/1_KV1/01_trotoar) | 1 s | 64 MB | 22 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
