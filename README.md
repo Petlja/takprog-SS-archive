@@ -280,3 +280,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2022-23 | Državno | [Turizam](takprog-2022-23/04_DRZ/06_turizam) | 2.5 s | 512 MB | 44 | default | The statement's example was test 1 in an earlier upload; the contest's test 1 is a different small test |
 | 2022-23 | SIO | [Operacija nad glistom](takprog-2022-23/05_SIO/01_operacija_nad_glistom) | 1 s | 256 MB | 41 | default, `grader/` | Functional |
 | 2022-23 | SIO | [Kompresovani niz](takprog-2022-23/05_SIO/02_kompresovani_niz) | 0.5 s | 256 MB | 132 | default, `grader/` | Functional |
+| 2022-23 | SIO | [Najslabija karika](takprog-2022-23/05_SIO/03_samo_najjaci_opstaju) | 3.5 s | 512 MB | 50 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
