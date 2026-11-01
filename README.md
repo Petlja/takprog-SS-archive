@@ -257,3 +257,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2021-22 | Državno | [Šmeker](takprog-2021-22/05_DRZ/05_smeker) | 1 s | 256 MB | 28 | `checker.cpp` (exact tokens) | All tests were uploaded separately just before the contest; they are included |
 | 2021-22 | Državno | [Konstrukta](takprog-2021-22/05_DRZ/06_konstrukta) | 1.6 s | 256 MB | 44 | `checker.cpp` (custom) | — |
 | 2022-23 | Kvalifikacije 1 | [Sudar](takprog-2022-23/01_KV1/01_sudar) | 0.1 s | 32 MB | 45 | default | — |
+| 2022-23 | Kvalifikacije 1 | [Nameštanje glasanja](takprog-2022-23/01_KV1/02_namestanjeg) | 1 s | 64 MB | 35 | `checker.cpp` (custom) | Test 1 was replaced during the contest by the statement's example, and every submission was graded again; this is the replaced version |
