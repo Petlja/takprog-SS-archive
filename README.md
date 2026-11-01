@@ -366,3 +366,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | EGOI izborno | [Tajna Matrica](takprog-2025-26/04_EGOI_IZB/04_tajna_matrica) | 1 s | 256 MB | 74 | `checker.cpp` (custom), `grader/` | Functional |
 | 2025-26 | SIO | [Prodaja](takprog-2025-26/05_SIO/01_prodaja) | 1 s | 64 MB | 158 | default, `grader/` | Functional |
 | 2025-26 | SIO | [Gradovi](takprog-2025-26/05_SIO/02_gradovi) | 1 s | 256 MB | 67 | `checker.cpp` (custom), `grader/` | Functional |
+| 2025-26 | SIO | [Minecraft kOOfa](takprog-2025-26/05_SIO/03_koofa) | — | — | 10 | `checker.cpp` (custom) | Output-only, so the limits don't apply. The answer is a binary file; the checker scores each test 0–10 against the best known value in the `.out`. No scoring config: each test is worth the checker's points, as at the contest |
