@@ -57,7 +57,8 @@ says so where the tests changed.
 
 2024-25 and later have no collection: the statements are the commission's Markdown originals from Petlja, in
 Cyrillic, and the tasks were not re-run; only the checkers were tried against the official outputs. From the 2024-25
-selection rounds on, the contests ran on Petlja's Linux grader.
+selection rounds on, the contests ran on Petlja's Linux grader. In 2025-26 several checkers score each test
+themselves and there is no scoring file on Petlja; there `scoring.yaml` says `score_total: null`, as at the contest.
 
 ## Limits
 
