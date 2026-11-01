@@ -275,6 +275,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2021-22 | EJOI izborno | [Zagrade](takprog-2021-22/07_EJOI_Izborno/03_zagrade) | 1 s | 64 MB | 31 | default | All tests were uploaded separately before the contest; they are included |
 | 2021-22 | EGOI izborno | [Računar](takprog-2021-22/08_EGOI_Izborno/01_racunar) | 1 s | 64 MB | 19 | default | — |
 | 2021-22 | EGOI izborno | [XXL Matrica](takprog-2021-22/08_EGOI_Izborno/02_xxl_matrica) | 1 s | 64 MB | 92 | default | — |
+| 2021-22 | EGOI izborno | [Nadvlačenje konopca](takprog-2021-22/08_EGOI_Izborno/03_nadvlacenje_konopca) | 1 s | 64 MB | 26 | default | — |
 | 2022-23 | Kvalifikacije 1 | [Sudar](takprog-2022-23/01_KV1/01_sudar) | 0.1 s | 32 MB | 45 | default | — |
 | 2022-23 | Kvalifikacije 1 | [Nameštanje glasanja](takprog-2022-23/01_KV1/02_namestanjeg) | 1 s | 64 MB | 35 | `checker.cpp` (custom) | Test 1 was replaced during the contest by the statement's example, and every submission was graded again; this is the replaced version |
 | 2022-23 | Kvalifikacije 1 | [Sante](takprog-2022-23/01_KV1/03_sante) | 1 s | 64 MB | 22 | default | — |
