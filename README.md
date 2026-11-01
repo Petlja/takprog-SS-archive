@@ -63,6 +63,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2016-17 | Okružno | [Baza](takprog-2016-17/2_OKR/04_baza) | 1 s | 256 MB | 22 | `checker.cpp` (custom, rewritten) | Any placement with exactly M safe sectors is correct. The statement's picture `Baza_Example1.png` is lost |
 | 2016-17 | Okružno | [Kosmodrom](takprog-2016-17/2_OKR/05_kosmodrom) | 0.3 s | 256 MB | 12 | default | — |
 | 2016-17 | Okružno | [Mingo](takprog-2016-17/2_OKR/06_mingo) | 1.5 s | 256 MB | 22 | default | The contest's copy on Petlja shows Kosmodrom's statement; this one is from the round's testing copy, which has the same tests |
+| 2016-17 | Državno | [Bond](takprog-2016-17/3_DRZ/01_bond) | 1 s | 256 MB | 20 | default | The contest's copy on Petlja shows Karte's statement; this one is from the round's testing copy, which has the same tests |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
