@@ -183,6 +183,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2019-20 | Državno | [Lek](takprog-2019-20/05_DRZ/01_lek) | 2 s | 256 MB | 42 | `checker.cpp` (custom, one include added) | One `#include <vector>` was added to the checker: today's g++ needs it, and without it nothing has been accepted since 2025 |
 | 2019-20 | Državno | [Veštica](takprog-2019-20/05_DRZ/02_vestica) | 1 s | 256 MB | 33 | default | — |
 | 2019-20 | Državno | [Trookrugao](takprog-2019-20/05_DRZ/03_trookrugao) | 2.5 s | 512 MB | 32 | default | — |
+| 2019-20 | Državno | [Statistika](takprog-2019-20/05_DRZ/04_statistika) | 1.5 s | 256 MB | 16 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
