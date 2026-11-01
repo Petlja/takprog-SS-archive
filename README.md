@@ -265,3 +265,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2022-23 | Kvalifikacije 2 | [Finale](takprog-2022-23/02_KV2/02_finale) | 0.1 s | 32 MB | 22 | `checker.cpp` (exact tokens) | — |
 | 2022-23 | Kvalifikacije 2 | [Gužva](takprog-2022-23/02_KV2/03_guzva) | 3 s | 256 MB | 21 | `checker.cpp` (exact tokens) | All tests were uploaded separately before the contest; they are included |
 | 2022-23 | Kvalifikacije 2 | [Formacija](takprog-2022-23/02_KV2/04_formacija) | 1 s | 256 MB | 22 | `checker.cpp` (exact tokens) | — |
+| 2022-23 | Kvalifikacije 2 | [Opklada](takprog-2022-23/02_KV2/05_opklada) | 4 s | 256 MB | 21 | `checker.cpp` (custom) | All tests were uploaded separately before the contest; they are included. The `.out` files say only whether a suitable matrix exists; the checker verifies the contestant's matrix itself |
