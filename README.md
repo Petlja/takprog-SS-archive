@@ -1,6 +1,6 @@
-# Takprog archive
+# Takprog archive: high school
 
-Tasks from Serbian informatics competitions (Takprog), restored from Petlja and checked, for the competition
+Tasks from Serbian high-school informatics competitions (Takprog), restored from Petlja and checked, for the competition
 archive. Each task has everything needed to set it again: statement with examples, testcases, checker (or grader), scoring,
 and time and memory limits. The tasks are under CC BY, as the competition commission publishes them, except the six
 of the 2017 training camp (`takprog-2016-17/PRI`): those are ICPC problems, and their statements are ICPC's.
