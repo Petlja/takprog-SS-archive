@@ -271,6 +271,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2021-22 | SIO | [US Open](takprog-2021-22/06_SIO/05_us_open) | 1 s | 256 MB | 43 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
 | 2021-22 | SIO | [Metropole](takprog-2021-22/06_SIO/06_metropole) | 1 s | 512 MB | 55 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
 | 2021-22 | EJOI izborno | [Poslovan Čovek](takprog-2021-22/07_EJOI_Izborno/01_poslovan_covek) | 1.3 s | 256 MB | 35 | default | — |
+| 2021-22 | EJOI izborno | [Arhitekta](takprog-2021-22/07_EJOI_Izborno/02_arhitekta) | 1.5 s | 128 MB | 35 | default | — |
 | 2022-23 | Kvalifikacije 1 | [Sudar](takprog-2022-23/01_KV1/01_sudar) | 0.1 s | 32 MB | 45 | default | — |
 | 2022-23 | Kvalifikacije 1 | [Nameštanje glasanja](takprog-2022-23/01_KV1/02_namestanjeg) | 1 s | 64 MB | 35 | `checker.cpp` (custom) | Test 1 was replaced during the contest by the statement's example, and every submission was graded again; this is the replaced version |
 | 2022-23 | Kvalifikacije 1 | [Sante](takprog-2022-23/01_KV1/03_sante) | 1 s | 64 MB | 22 | default | — |
