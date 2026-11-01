@@ -340,3 +340,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Kvalifikacije | [Podela jabuka](takprog-2025-26/01_KV/01_podela_jabuka) | 1 s | 64 MB | 22 | default | — |
 | 2025-26 | Kvalifikacije | [Najbliži neprijatelj](takprog-2025-26/01_KV/02_najblizi_neprijatelj) | 1 s | 64 MB | 102 | default | — |
 | 2025-26 | Kvalifikacije | [Dzek Vrabac](takprog-2025-26/01_KV/03_dzek_vrabac) | 1 s | 64 MB | 51 | default | Most tests were replaced on the round's first day; the earlier submissions were graded again |
+| 2025-26 | Kvalifikacije | [Prijateljski trkači](takprog-2025-26/01_KV/04_prijateljski_trkaci) | 1 s | 64 MB | 50 | default | — |
