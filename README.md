@@ -115,6 +115,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2016-17 | Pripreme | [CosmoCraft](takprog-2016-17/PRI/CosmoCraft) | 3 s | 64 MB | 1 | default | ICPC problem: one test file with many cases, judged solved or not. The second camp contest's copy has the same test |
 | 2016-17 | Pripreme | [Count the Regions](takprog-2016-17/PRI/Count) | 0.3 s | 64 MB | 1 | default | ICPC problem: one test file with many cases, judged solved or not. The statement's picture `count.png` (Figure C.1) is lost. The second camp contest's copy has the same test |
 | 2016-17 | Pripreme | [Covered walkway](takprog-2016-17/PRI/CoveredWalkway) | 100 s | 256 MB | 1 | default | ICPC problem: one test file with many cases, judged solved or not. The test file is 74 MB |
+| 2016-17 | Pripreme | [Red/Blue Spanning Tree](takprog-2016-17/PRI/RedBlue) | 3 s | 64 MB | 1 | default | ICPC problem: one test file with many cases, judged solved or not. The second camp contest's copy has the same test |
 | 2017-18 | Kvalifikacije 1 | [Prva cifra](takprog-2017-18/1_KV1/01_prva_cifra) | 0.1 s | 64 MB | 12 | default | Petlja's contest copy has no statement; this one is from its early collection copy, which has the same tests |
 | 2017-18 | Kvalifikacije 1 | [Transformacija matrice](takprog-2017-18/1_KV1/02_transformacija_matrice) | 4 s | 128 MB | 22 | default | — |
 | 2017-18 | Kvalifikacije 1 | [Prodavnice](takprog-2017-18/1_KV1/03_prodavnice) | 1 s | 64 MB | 22 | default | The statement's example 1 writes one query as `60 8`; test 1 has `8 60`, with the same answer |
