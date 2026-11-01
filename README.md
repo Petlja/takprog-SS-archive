@@ -268,6 +268,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2021-22 | SIO | [TSM](takprog-2021-22/06_SIO/02_tsm) | 1.5 s | 256 MB | 25 | `checker.cpp` (exact tokens), `grader/` | Functional. Tests 15 and 20–25 were replaced separately before the contest; this is the replaced version. From June to November 2022 Petlja's copy had a different set; the contest's submissions were graded only on this one |
 | 2021-22 | SIO | [Igrica](takprog-2021-22/06_SIO/03_igrica) | 2.5 s | 256 MB | 30 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
 | 2021-22 | SIO | [Dugmići](takprog-2021-22/06_SIO/04_dugmici) | 0.7 s | 64 MB | 32 | default, `grader/` | Functional |
+| 2021-22 | SIO | [US Open](takprog-2021-22/06_SIO/05_us_open) | 1 s | 256 MB | 43 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
 | 2022-23 | Kvalifikacije 1 | [Sudar](takprog-2022-23/01_KV1/01_sudar) | 0.1 s | 32 MB | 45 | default | — |
 | 2022-23 | Kvalifikacije 1 | [Nameštanje glasanja](takprog-2022-23/01_KV1/02_namestanjeg) | 1 s | 64 MB | 35 | `checker.cpp` (custom) | Test 1 was replaced during the contest by the statement's example, and every submission was graded again; this is the replaced version |
 | 2022-23 | Kvalifikacije 1 | [Sante](takprog-2022-23/01_KV1/03_sante) | 1 s | 64 MB | 22 | default | — |
