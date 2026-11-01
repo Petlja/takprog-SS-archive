@@ -362,3 +362,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Državno | [A3 - Intergalaktički sukob](takprog-2025-26/03_DRZ/06_buenas_tackas) | 1.5 s | 256 MB | 72 | `checker.cpp` (custom) | — |
 | 2025-26 | EGOI izborno | [Raspored](takprog-2025-26/04_EGOI_IZB/01_raspored) | 2.5 s | 256 MB | 87 | `checker.cpp` (custom) | — |
 | 2025-26 | EGOI izborno | [Dva Tornja](takprog-2025-26/04_EGOI_IZB/02_dva_tornja) | 2 s | 256 MB | 64 | default | — |
+| 2025-26 | EGOI izborno | [Takmičenje](takprog-2025-26/04_EGOI_IZB/03_takmicenje) | 1 s | 256 MB | 85 | default | — |
