@@ -224,6 +224,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2020-21 | SIO | [Tačke](takprog-2020-21/06_SIO/03_tacke) | 2 s | 256 MB | 40 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included. Petlja's row now points to a checker whose stored source is a damaged zip, attached after the contest; the contest used the default checker |
 | 2020-21 | SIO | [Izvlačenje slamki](takprog-2020-21/06_SIO/04_izvlacenje_slamki) | 1 s | 256 MB | 32 | `checker.cpp` (exact tokens), `grader/` | Functional. Tests 29–32 were replaced separately before the contest; this is the replaced version |
 | 2020-21 | SIO | [Xorko](takprog-2020-21/06_SIO/05_xorko) | 1 s | 256 MB | 35 | default, `grader/` | Functional |
+| 2020-21 | SIO | [Dva stabla](takprog-2020-21/06_SIO/06_dva_stabla) | 3 s | 256 MB | 27 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
