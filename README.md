@@ -104,6 +104,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2017-18 | Okružno | [Velika matrica](takprog-2017-18/4_OKR/05_velika_matrica) | 2 s | 64 MB | 11 | default | — |
 | 2017-18 | Okružno | [Formula](takprog-2017-18/4_OKR/06_formula) | 1 s | 64 MB | 22 | `checker.cpp` (custom) | — |
 | 2017-18 | Državno | [Pola-pola](takprog-2017-18/5_DRZ/01_polapola) | 0.5 s | 256 MB | 28 | default | — |
+| 2017-18 | Državno | [Trik](takprog-2017-18/5_DRZ/02_trik) | 0.3 s | 256 MB | 33 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
