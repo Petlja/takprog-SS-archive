@@ -133,6 +133,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2018-19 | Kvalifikacije 3 | [Vorp Spejs](takprog-2018-19/03_KV3/01_vorpspejs) | 0.4 s | 64 MB | 102 | default | The statement's example 1 places the ship and the exit one column to the left of test 1; the answer is the same |
 | 2018-19 | Kvalifikacije 3 | [Moć niza](takprog-2018-19/03_KV3/02_moc_niza) | 0.5 s | 64 MB | 12 | default | — |
 | 2018-19 | Kvalifikacije 3 | [Pakovanje](takprog-2018-19/03_KV3/03_pakovanje) | 1.6 s | 64 MB | 12 | default | — |
+| 2018-19 | Kvalifikacije 3 | [Požar](takprog-2018-19/03_KV3/04_pozar) | 1 s | 64 MB | 21 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
