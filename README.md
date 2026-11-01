@@ -201,6 +201,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2020-21 | Kvalifikacije 2 | [Uzgajivači jabuka](takprog-2020-21/02_KV2/02_jabuke) | 2 s | 256 MB | 11 | `checker.cpp` (custom) | — |
 | 2020-21 | Kvalifikacije 2 | [Slova](takprog-2020-21/02_KV2/03_slova) | 1 s | 256 MB | 12 | default | — |
 | 2020-21 | Kvalifikacije 2 | [BUG](takprog-2020-21/02_KV2/04_BUG) | 1 s | 256 MB | 22 | default | — |
+| 2020-21 | Kvalifikacije 2 | [01 niz](takprog-2020-21/02_KV2/05_01_niz) | 2 s | 256 MB | 52 | default | Petlja lost tests 12–21, 27, 29, 30, 32–35, 37–40 and 42–51 (the contest graded 52); they are from the 2024 collection, which matches every test Petlja still has. Tests 1–4, 6–8, 22–26, 28, 31, 36, 41 and 52 come from patches uploaded before the contest |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
