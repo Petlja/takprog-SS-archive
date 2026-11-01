@@ -348,3 +348,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Kvalifikacije | [Potera](takprog-2025-26/01_KV/09_potera) | 5 s | 256 MB | 27 | default | — |
 | 2025-26 | Kvalifikacije | [Perica i novogodisnje stablo](takprog-2025-26/01_KV/10_laganje) | 0.5 s | 256 MB | 51 | `checker.cpp` (custom) | Test 1 is the statement's example; its input had a wrong number until day 8 of the 10-day round, when a patch corrected it. The 100 earlier submissions weren't graded again |
 | 2025-26 | Kvalifikacije | [Srecko i Ponchoi](takprog-2025-26/01_KV/11_srecko_i_poncoi) | 1 s | 512 MB | 51 | `checker.cpp` (custom) | — |
+| 2025-26 | Okružno | [Majstorija](takprog-2025-26/02_OKR/01_majstorija) | 1 s | 256 MB | 21 | `checker.cpp` (custom) | Petlja has no expected outputs (`.out` files); the checker doesn't need them, it verifies the contestant's matrix itself |
