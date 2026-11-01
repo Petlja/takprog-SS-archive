@@ -177,6 +177,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2019-20 | Okružno | [Premeštanja](takprog-2019-20/04_OKR/01_premestanja) | 2.5 s | 512 MB | 22 | default | Tests 7–10, 15, 17–18, 20–21 were replaced separately before the contest; this is the replaced version |
 | 2019-20 | Okružno | [Zaboravljena partija](takprog-2019-20/04_OKR/02_zaboravljena) | 1 s | 512 MB | 22 | `checker.cpp` (custom) | The `.out` files say only whether a position exists; the checker verifies the contestant's position itself |
 | 2019-20 | Okružno | [Čarobnjak iz voza](takprog-2019-20/04_OKR/03_carobnjak_iz_voza) | 1 s | 512 MB | 22 | default | — |
+| 2019-20 | Okružno | [Dobitni listić](takprog-2019-20/04_OKR/04_dobitni_listic) | 0.5 s | 512 MB | 22 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
