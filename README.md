@@ -109,6 +109,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2017-18 | Državno | [Super velika matrica](takprog-2017-18/5_DRZ/04_super_velika) | 3 s | 64 MB | 23 | default | — |
 | 2017-18 | Državno | [Sort na stablu](takprog-2017-18/5_DRZ/05_sort_na_stablu) | 2 s | 256 MB | 24 | default | The statement's picture `sortnastablu_ex1.png` is lost |
 | 2017-18 | Državno | [Obaranje](takprog-2017-18/5_DRZ/06_obaranje) | 0.5 s | 64 MB | 25 | default | Test 8 exists in two versions on Petlja with the same answer (0): this one, with large coordinates, is current; which one the contest used is unknown. The statement's picture `obaranje_example1.png` is lost |
+| 2017-18 | SIO | [Pacovi](takprog-2017-18/6_SIO/01_pacovi) | 0.3 s | 256 MB | 38 | default, `grader/` | Functional |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
