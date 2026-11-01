@@ -302,3 +302,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | Okružno | [Linijopolis](takprog-2023-24/03_OKR/06_linijopolis) | 4 s | 128 MB | 22 | default | The 2024 collection has different tests 3, 4, 7, 12, 14 and 17–22 (of 22); these are the ones the contest ran |
 | 2023-24 | Državno | [Nepodniz](takprog-2023-24/04_DRZ/01_nepodniz) | 3 s | 64 MB | 33 | default | — |
 | 2023-24 | Državno | [Domski Sletač](takprog-2023-24/04_DRZ/02_domski_sletac) | 1 s | 256 MB | 30 | default | The 2024 collection has an earlier upload's outputs for tests 14–20; these are the ones the contest ran |
+| 2023-24 | Državno | [Starući prsten](takprog-2023-24/04_DRZ/03_staruci_prsten) | 1 s | 256 MB | 59 | default | — |
