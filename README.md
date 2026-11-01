@@ -338,3 +338,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2024-25 | Izborno | [Sabiranje razapinjućih stabala](takprog-2024-25/B_IZB/05_sabiranje_razapinjucih_stabala) | 0.5 s | 256 MB | 34 | default, `grader/` | Functional |
 | 2024-25 | Izborno | [Titikaka](takprog-2024-25/B_IZB/06_titikaka) | 2 s | 512 MB | 10 | `checker.cpp` (custom), `grader/` | Functional. No scoring config: each test is worth the checker's 0, 5 or 10 points, as at the contest. The `.out` files hold the two thresholds; the checker verifies the contestant's arrangement itself |
 | 2025-26 | Kvalifikacije | [Podela jabuka](takprog-2025-26/01_KV/01_podela_jabuka) | 1 s | 64 MB | 22 | default | — |
+| 2025-26 | Kvalifikacije | [Najbliži neprijatelj](takprog-2025-26/01_KV/02_najblizi_neprijatelj) | 1 s | 64 MB | 102 | default | — |
