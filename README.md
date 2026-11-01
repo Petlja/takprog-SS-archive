@@ -305,3 +305,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | Državno | [Starući prsten](takprog-2023-24/04_DRZ/03_staruci_prsten) | 1 s | 256 MB | 59 | default | — |
 | 2023-24 | Državno | [I/ili](takprog-2023-24/04_DRZ/04_i_ili) | 1 s | 64 MB | 22 | default | — |
 | 2023-24 | Državno | [Kiki](takprog-2023-24/04_DRZ/05_kiki) | 1.5 s | 256 MB | 40 | `checker.cpp` (custom) | The `.out` files hold only the largest sum; the checker verifies the contestant's coloring itself |
+| 2023-24 | Državno | [Palindromska šetnja](takprog-2023-24/04_DRZ/06_palindromska_setnja) | 3 s | 256 MB | 102 | default | — |
