@@ -172,6 +172,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2019-20 | Kvalifikacije 3 | [Upoznavanje](takprog-2019-20/03_KV3/01_upoznavanje) | 2 s | 256 MB | 22 | default | — |
 | 2019-20 | Kvalifikacije 3 | [Lubenice](takprog-2019-20/03_KV3/02_lubenice) | 0.5 s | 256 MB | 22 | default | — |
 | 2019-20 | Kvalifikacije 3 | [Sazvežđa](takprog-2019-20/03_KV3/03_sazvezdja) | 0.5 s | 64 MB | 28 | `checker.cpp` (custom) | — |
+| 2019-20 | Kvalifikacije 3 | [Boje](takprog-2019-20/03_KV3/04_boje) | 1 s | 512 MB | 12 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
