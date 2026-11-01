@@ -310,3 +310,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | SIO | [Et tu, Brute?](takprog-2023-24/05_SIO/02_et_tu_brute) | 1.5 s | 256 MB | 50 | default, `grader/` | Functional. All tests were uploaded separately before the contest; they are included. The 2024 collection has a different output for test 4 |
 | 2023-24 | SIO | [E pluribus unum](takprog-2023-24/05_SIO/03_e_pluribus_unum) | 3.5 s | 256 MB | 93 | default, `grader/` | Functional |
 | 2023-24 | SIO | [Quaestio militaris formationis](takprog-2023-24/05_SIO/04_quaestio_militaris_formationis) | 1 s | 256 MB | 31 | `checker.cpp` (custom), `grader/` | Functional. The `.out` files hold a flag and the smallest weakness; where the flag is 1, the checker also verifies the contestant's permutation |
+| 2023-24 | SIO | [Viae Romanae](takprog-2023-24/05_SIO/05_viae_romanae) | 1.5 s | 256 MB | 104 | default, `grader/` | Functional |
