@@ -186,6 +186,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2019-20 | Državno | [Statistika](takprog-2019-20/05_DRZ/04_statistika) | 1.5 s | 256 MB | 16 | default | — |
 | 2019-20 | Državno | [Spec zadatak](takprog-2019-20/05_DRZ/05_spec) | 1.5 s | 256 MB | 28 | default | Tests 2, 3, 14, 23 and 28 were corrected in the first 25 minutes of the contest, before any contestant had submitted; this is the corrected set |
 | 2019-20 | Državno | [Festival](takprog-2019-20/05_DRZ/06_festival) | 2.5 s | 256 MB | 24 | `checker.cpp` (exact tokens) | Test 16 was replaced separately before the contest; this is the replaced version |
+| 2019-20 | SIO | [Brojorb](takprog-2019-20/06_SIO/01_brojorb) | — | — | 16 | default | Output-only, so the limits don't apply. Output 1 is the contestant's source code: it is worth 0 points, and the default checker marks it wrong, as at the contest |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
