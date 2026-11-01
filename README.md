@@ -344,3 +344,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Kvalifikacije | [Paintball](takprog-2025-26/01_KV/05_paintball) | 1 s | 64 MB | 22 | `checker.cpp` (custom) | — |
 | 2025-26 | Kvalifikacije | [Baki i Srecko](takprog-2025-26/01_KV/06_najvektor) | 1 s | 64 MB | 52 | `checker.cpp` (custom) | — |
 | 2025-26 | Kvalifikacije | [Mst 😭](takprog-2025-26/01_KV/07_mst_😭) | 1 s | 256 MB | 51 | default | — |
+| 2025-26 | Kvalifikacije | [Igra sa Kartama](takprog-2025-26/01_KV/08_Igra_sa_kartama) | 3 s | 256 MB | 23 | default | Test 8 was replaced separately before the contest; this is the replaced version |
