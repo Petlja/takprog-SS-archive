@@ -98,6 +98,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2017-18 | Kvalifikacije 3 | [Plus-minus](takprog-2017-18/3_KV3/04_plus_minus) | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — |
 | 2017-18 | Kvalifikacije 3 | [Prepisivanje](takprog-2017-18/3_KV3/05_prepisivanje) | 2.5 s | 512 MB | 22 | default | An early copy on Petlja has only tests 1–12; the contest ran all 22 |
 | 2017-18 | Okružno | [Pangram](takprog-2017-18/4_OKR/01_pangram) | 1 s | 512 MB | 22 | `checker.cpp` (custom) | Petlja also has an earlier version of test 18 with some letters in other places; both are impossible to reconstruct, so the answer `SAN` is the same |
+| 2017-18 | Okružno | [Matriks](takprog-2017-18/4_OKR/02_matriks) | 1 s | 64 MB | 11 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
