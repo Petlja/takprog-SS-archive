@@ -26,11 +26,14 @@ test versions, the competition, its testing and archive copies. The 2024 collect
 used for these: it has fewer tests and different limits. Only the **statement**,
 which the collection shares with the competition, comes from it.
 
-The collection's author solutions are run against the chosen testcases in a copy of Petlja's grader before the task is added. Anything
+Before a task is added, solutions are run against the chosen testcases in a copy of Petlja's grader: the collection's
+author solutions where it has them, otherwise solutions submitted at the contest, which must get the verdict the contest
+recorded on every test. Functional tasks run with their grader; for output-only tasks the answers submitted at the
+contest are scored again with the checker. Anything
 that couldn't be found is noted in the table below, for the authors to fill in.
 
-**Seasons the collection doesn't cover** (it has 2019-20 to 2023-24) come from Petlja alone, and their tasks were
-not re-run. In 2016-17, the statements are Petlja's own, in Latin script as the contest showed them, converted from
+**Seasons the collection doesn't cover** (it has 2019-20 to 2023-24) come from Petlja alone; their tasks were
+checked with solutions submitted at the contest. In 2016-17, the statements are Petlja's own, in Latin script as the contest showed them, converted from
 HTML. Petlja kept only one version of the tests, so the contest's set is the one it still has; where a round was
 also set up as a separate testing competition, the two sets were compared. The scoring was kept as per-test and
 per-subtask rows rather than a scoring file; `scoring.yaml` is rebuilt from them.
@@ -65,7 +68,7 @@ contest, every earlier submission was graded again, so the set is the one Petlja
 says so where the tests changed.
 
 2024-25 and later have no collection: the statements are the commission's Markdown originals from Petlja, in
-Cyrillic, and the tasks were not re-run; only the checkers were tried against the official outputs. From the 2024-25
+Cyrillic, and the tasks were checked with solutions submitted at the contest. From the 2024-25
 selection rounds on, the contests ran on Petlja's Linux grader. In 2025-26 several checkers score each test
 themselves and there is no scoring file on Petlja; there `scoring.yaml` says `score_total: null`, as at the contest.
 
@@ -77,8 +80,8 @@ themselves and there is no scoring file on Petlja; there `scoring.yaml` says `sc
   2.6 GHz, with every run sandboxed by [isolate](https://github.com/ioi/isolate). C++ is compiled with g++ 14.2,
   `-std=gnu++17 -O2 -static`; Python is 3.13.
 - The limits are the ones set for the competition, on the grader of that time (until 2025 a Windows machine with
-  other compilers). For the seasons the collection covers, every task's solutions were re-run on today's grader:
-  they pass within the limits.
+  other compilers). Every task's solutions were re-run on today's grader and pass within the limits, except where
+  a task's note says otherwise.
 
 ## Tasks
 
@@ -120,7 +123,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2017-18 | Kvalifikacije 1 | [Prva cifra](takprog-2017-18/1_KV1/01_prva_cifra) | 0.1 s | 64 MB | 12 | default | Petlja's contest copy has no statement; this one is from its early collection copy, which has the same tests |
 | 2017-18 | Kvalifikacije 1 | [Transformacija matrice](takprog-2017-18/1_KV1/02_transformacija_matrice) | 4 s | 128 MB | 22 | default | — |
 | 2017-18 | Kvalifikacije 1 | [Prodavnice](takprog-2017-18/1_KV1/03_prodavnice) | 1 s | 64 MB | 22 | default | The statement's example 1 writes one query as `60 8`; test 1 has `8 60`, with the same answer |
-| 2017-18 | Kvalifikacije 1 | [Okrnjen trougao](takprog-2017-18/1_KV1/04_okrnjen_trougao) | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — |
+| 2017-18 | Kvalifikacije 1 | [Okrnjen trougao](takprog-2017-18/1_KV1/04_okrnjen_trougao) | 1 s | 128 MB | 22 | `checker.cpp` (custom) | Test 11's answer is about 2.6·10³⁵: solutions that overflow a `double` along the way, which the 2017 grader let through, fail it today |
 | 2017-18 | Kvalifikacije 1 | [Nagrade](takprog-2017-18/1_KV1/05_nagrade) | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — |
 | 2017-18 | Kvalifikacije 2 | [Mala matrica](takprog-2017-18/2_KV2/01_mala_matrica) | 1 s | 256 MB | 22 | `checker.cpp` (custom) | — |
 | 2017-18 | Kvalifikacije 2 | [Trivijalan broj](takprog-2017-18/2_KV2/02_trivijalan_broj) | 2 s | 256 MB | 11 | default | — |
@@ -181,7 +184,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2018-19 | SIO | [Crno-bela zvezda](takprog-2018-19/06_SIO/02_zvezda) | 0.4 s | 64 MB | 57 | default, `grader/` | Functional |
 | 2018-19 | SIO | [Kamera](takprog-2018-19/06_SIO/03_kamera) | 5 s | 512 MB | 45 | default, `grader/` | Functional |
 | 2018-19 | SIO | [Skladište](takprog-2018-19/06_SIO/04_skladiste) | 0.3 s | 128 MB | 20 | default, `grader/` | Functional |
-| 2018-19 | SIO | [Planine](takprog-2018-19/06_SIO/05_planine) | 1 s | 64 MB | 61 | `checker.cpp` (custom), `grader/` | Functional. The checker compares the peak (the two numbers in `.out`) and rejects more queries than allowed. Test 1 was replaced separately before the contest; this is the replaced version |
+| 2018-19 | SIO | [Planine](takprog-2018-19/06_SIO/05_planine) | 1 s | 64 MB | 61 | `checker.cpp` (custom), `grader/` | Functional. The checker compares the peak (the two numbers in `.out`) and rejects more queries than allowed. Test 1 was replaced separately before the contest; this is the replaced version. Today's grader counts memory a program declares, not only what it uses: solutions accepted at the contest, whose arrays are declared larger than they need, crash at start under 64 MB and pass with a higher limit |
 | 2018-19 | SIO | [Film](takprog-2018-19/06_SIO/06_film) | 1 s | 256 MB | 58 | `checker.cpp` (custom), `grader/` | Functional |
 | 2019-20 | Kvalifikacije 1 | [Isplata](takprog-2019-20/01_KV1/01_isplata) | 0.1 s | 64 MB | 22 | `checker.cpp` (exact tokens) | — |
 | 2019-20 | Kvalifikacije 1 | [Odbojka](takprog-2019-20/01_KV1/02_odbojka) | 1 s | 64 MB | 23 | `checker.cpp` (custom) | Tests 6–7 were replaced separately before the contest; this is the replaced version |
