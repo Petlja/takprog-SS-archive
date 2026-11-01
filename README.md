@@ -114,6 +114,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2017-18 | SIO | [Popis](takprog-2017-18/6_SIO/03_popis) | 2 s | 512 MB | 21 | default, `grader/` | Functional |
 | 2017-18 | SIO | [Bombonice](takprog-2017-18/6_SIO/04_bombonice) | 1.5 s | 128 MB | 26 | default, `grader/` | Functional. Petlja's two earlier versions have wrong expected outputs from test 12 or 13 on; these agree with a solution written from the statement, and the 26 full scores at the contest show it ran on them |
 | 2017-18 | SIO | [Voćnjak](takprog-2017-18/6_SIO/05_vocnjak) | 1 s | 128 MB | 41 | `checker.cpp` (custom), `grader/` | Functional. The checker compares the cell (the first two numbers of `.out`) and rejects more queries than allowed |
+| 2017-18 | SIO | [Taman](takprog-2017-18/6_SIO/06_taman) | 1 s | 128 MB | 25 | default, `grader/` | Functional |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
