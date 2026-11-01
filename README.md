@@ -18,6 +18,10 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
 | `grader/` | Functional tasks only (the contestant writes functions, not a program): the competition's grader, per language, as Petlja serves it. `cpp/main.cpp` and `cpp/code.h` are compiled together with the contestant's file; `pas/` is the Pascal version from the same contest |
 
+Six missing statement illustrations (Kružna škola, Krompir, Baza, Count the Regions, Sort na stablu and Obaranje)
+and vOOda’s eight input pictures were restored from the commission’s `takprog-*` repositories. The vOOda
+pictures are named `1.png`–`8.png` as in the statement; their pixels match the corresponding archived input tests.
+
 ## How a task gets here
 
 **Tests, limits, checker and scoring come from the competition on Petlja**, as the contest ran. They are taken byte
@@ -100,11 +104,11 @@ Please check the tasks against your own copies too.
 | 2016-17 | Kvalifikacije | [Kul kule](takprog-2016-17/1_KV1/03_kul_kule) | standard | 1 s | 64 MB | 22 | default | — | — |
 | 2016-17 | Kvalifikacije | [Filozof](takprog-2016-17/1_KV1/04_filozof) | standard | 0.5 s | 256 MB | 12 | default | — | — |
 | 2016-17 | Kvalifikacije | [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) | standard | 0.2 s | 64 MB | 12 | default | Picture `img_sportski_centar.png` lost | — |
-| 2016-17 | Kvalifikacije | [Kružna škola](takprog-2016-17/1_KV1/06_kruzna_skola) | standard | 1 s | 256 MB | 27 | default | Picture `img_kruzna_skola.png` lost | — |
-| 2016-17 | Okružno | [Krompir](takprog-2016-17/2_OKR/01_krompir) | standard | 0.5 s | 256 MB | 22 | default | Picture `Krompir_Example1.png` lost | — |
+| 2016-17 | Kvalifikacije | [Kružna škola](takprog-2016-17/1_KV1/06_kruzna_skola) | standard | 1 s | 256 MB | 27 | default | — | — |
+| 2016-17 | Okružno | [Krompir](takprog-2016-17/2_OKR/01_krompir) | standard | 0.5 s | 256 MB | 22 | default | — | — |
 | 2016-17 | Okružno | [Raketa](takprog-2016-17/2_OKR/02_raketa) | standard | 0.1 s | 256 MB | 27 | default | — | — |
 | 2016-17 | Okružno | [Marsovci](takprog-2016-17/2_OKR/03_marsovci) | standard | 0.5 s | 256 MB | 22 | default | — | — |
-| 2016-17 | Okružno | [Baza](takprog-2016-17/2_OKR/04_baza) | standard | 1 s | 256 MB | 22 | `checker.cpp` (custom, rewritten) | Picture `Baza_Example1.png` lost | — |
+| 2016-17 | Okružno | [Baza](takprog-2016-17/2_OKR/04_baza) | standard | 1 s | 256 MB | 22 | `checker.cpp` (custom, rewritten) | — | — |
 | 2016-17 | Okružno | [Kosmodrom](takprog-2016-17/2_OKR/05_kosmodrom) | standard | 0.3 s | 256 MB | 12 | default | — | — |
 | 2016-17 | Okružno | [Mingo](takprog-2016-17/2_OKR/06_mingo) | standard | 1.5 s | 256 MB | 22 | default | — | — |
 | 2016-17 | Državno | [Bond](takprog-2016-17/3_DRZ/01_bond) | standard | 1 s | 256 MB | 20 | default | — | — |
@@ -121,7 +125,7 @@ Please check the tasks against your own copies too.
 | 2016-17 | SIO | [Pogled](takprog-2016-17/4_SIO/06_pogled) | standard | 1 s | 64 MB | 26 | default | — | — |
 | 2016-17 | Pripreme | [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) | standard | 10 s | 256 MB | 0 | default | The figure the statement describes is lost. The limits may be Two Circles' (see testcases) | **No testcases:** Petlja's copy has Two Circles' tests instead |
 | 2016-17 | Pripreme | [CosmoCraft](takprog-2016-17/PRI/CosmoCraft) | standard | 3 s | 64 MB | 1 | default | — | — |
-| 2016-17 | Pripreme | [Count the Regions](takprog-2016-17/PRI/Count) | standard | 0.3 s | 64 MB | 1 | default | Picture `count.png` lost | — |
+| 2016-17 | Pripreme | [Count the Regions](takprog-2016-17/PRI/Count) | standard | 0.3 s | 64 MB | 1 | default | — | — |
 | 2016-17 | Pripreme | [Covered walkway](takprog-2016-17/PRI/CoveredWalkway) | standard | 100 s | 256 MB | 1 | default | — | — |
 | 2016-17 | Pripreme | [Red/Blue Spanning Tree](takprog-2016-17/PRI/RedBlue) | standard | 3 s | 64 MB | 1 | default | — | — |
 | 2016-17 | Pripreme | [Two Circles](takprog-2016-17/PRI/TwoCircles) | standard | 10 s | 256 MB | 10 | `checker.cpp` (custom, rewritten) | — | — |
@@ -150,8 +154,8 @@ Please check the tasks against your own copies too.
 | 2017-18 | Državno | [Trik](takprog-2017-18/5_DRZ/02_trik) | standard | 0.3 s | 256 MB | 33 | `checker.cpp` (custom) | — | — |
 | 2017-18 | Državno | [Esikez](takprog-2017-18/5_DRZ/03_esikez) | standard | 1 s | 256 MB | 43 | default | — | — |
 | 2017-18 | Državno | [Super velika matrica](takprog-2017-18/5_DRZ/04_super_velika) | standard | 3 s | 64 MB | 23 | default | — | — |
-| 2017-18 | Državno | [Sort na stablu](takprog-2017-18/5_DRZ/05_sort_na_stablu) | standard | 2 s | 256 MB | 24 | default | Picture `sortnastablu_ex1.png` lost | — |
-| 2017-18 | Državno | [Obaranje](takprog-2017-18/5_DRZ/06_obaranje) | standard | 0.5 s | 64 MB | 25 | default | Picture `obaranje_example1.png` lost | — |
+| 2017-18 | Državno | [Sort na stablu](takprog-2017-18/5_DRZ/05_sort_na_stablu) | standard | 2 s | 256 MB | 24 | default | — | — |
+| 2017-18 | Državno | [Obaranje](takprog-2017-18/5_DRZ/06_obaranje) | standard | 0.5 s | 64 MB | 25 | default | — | — |
 | 2017-18 | SIO | [Pacovi](takprog-2017-18/6_SIO/01_pacovi) | functional | 0.3 s | 256 MB | 38 | default | — | — |
 | 2017-18 | SIO | [Imanje](takprog-2017-18/6_SIO/02_imanje) | output-only | — | — | 5 | `checker.cpp` (custom, converted) | — | — |
 | 2017-18 | SIO | [Popis](takprog-2017-18/6_SIO/03_popis) | functional | 2 s | 512 MB | 21 | default | — | — |
@@ -323,7 +327,7 @@ Please check the tasks against your own copies too.
 | 2022-23 | SIO | [Kompresovani niz](takprog-2022-23/05_SIO/02_kompresovani_niz) | functional | 0.5 s | 256 MB | 132 | default | — | — |
 | 2022-23 | SIO | [Najslabija karika](takprog-2022-23/05_SIO/03_samo_najjaci_opstaju) | functional | 3.5 s | 512 MB | 50 | default | — | — |
 | 2022-23 | SIO | [Opet XOR](takprog-2022-23/05_SIO/04_opet_xor) | functional | 4 s | 512 MB | 13 | default | — | — |
-| 2022-23 | SIO | [vOOda](takprog-2022-23/05_SIO/05_vOOda) | output-only | — | — | 8 | `checker.cpp` (custom) | The contestants' zip the statement mentions is lost (`compressor.cpp`, pictures `1.png`–`8.png`); `compressor.cpp` is in the 2024 collection | — |
+| 2022-23 | SIO | [vOOda](takprog-2022-23/05_SIO/05_vOOda) | output-only | — | — | 8 | `checker.cpp` (custom) | The contestants' zip and `compressor.cpp` are absent here; pictures `1.png`–`8.png` were restored from the commission repository; `compressor.cpp` is in the 2024 collection | — |
 | 2022-23 | SIO | [Parovi](takprog-2022-23/05_SIO/06_parovi) | functional | 1 s | 64 MB | 61 | default | — | — |
 | 2023-24 | Kvalifikacije 1 | [Tri tajna broja](takprog-2023-24/01_KV1/01_tri_tajna_broja) | standard | 1 s | 64 MB | 21 | default | — | — |
 | 2023-24 | Kvalifikacije 1 | [Moramo da recikliramo](takprog-2023-24/01_KV1/02_moramo_da_recikliramo) | standard | 2 s | 64 MB | 21 | default | — | — |
@@ -411,18 +415,15 @@ Please check the tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **21 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **15 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (15 tasks)**
+**Task problems (9 tasks)**
 
-- **Lost pictures (8):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar),
-  [Kružna škola](takprog-2016-17/1_KV1/06_kruzna_skola), [Krompir](takprog-2016-17/2_OKR/01_krompir),
-  [Baza](takprog-2016-17/2_OKR/04_baza), [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage),
-  [Count the Regions](takprog-2016-17/PRI/Count) (2016-17); [Sort na stablu](takprog-2017-18/5_DRZ/05_sort_na_stablu),
-  [Obaranje](takprog-2017-18/5_DRZ/06_obaranje) (2017-18).
+- **Lost pictures (2):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) and
+  [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
 - **Lost attachments for contestants (2):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer),
-  [vOOda](takprog-2022-23/05_SIO/05_vOOda) (2022-23, the zip with `compressor.cpp` and pictures).
+  [vOOda](takprog-2022-23/05_SIO/05_vOOda) (2022-23, the zip and `compressor.cpp`; its eight pictures have been restored).
 - **Placeholder section (1):** [Virus](takprog-2016-17/4_SIO/05_virus) (2016-17), the output description.
 - **No examples (3):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22),
   [Quaestio militaris formationis](takprog-2023-24/05_SIO/04_quaestio_militaris_formationis) (2023-24).
