@@ -406,3 +406,37 @@ Please check the tasks against your own copies too.
 | 2025-26 | SIO | [Vasilije mrzi geometriju](takprog-2025-26/05_SIO/04_vasa_mrzi_geometriju) | functional | 0.5 s | 64 MB | 99 | default | — | — |
 | 2025-26 | SIO | [Intergalakticki konflikt dva](takprog-2025-26/05_SIO/05_intergalakticki_konflikt_dva) | functional | 2 s | 64 MB | 116 | `checker.cpp` (custom) | — | — |
 | 2025-26 | SIO | [Gajbiša](takprog-2025-26/05_SIO/06_gajbisa) | functional | 5 s | 512 MB | 60 | default | — | — |
+
+## Summary
+
+All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
+their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **21 tasks have a problem**, listed below (Collecting
+Luggage is in both lists).
+
+**Task problems (15 tasks)**
+
+- **Lost pictures (8):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar),
+  [Kružna škola](takprog-2016-17/1_KV1/06_kruzna_skola), [Krompir](takprog-2016-17/2_OKR/01_krompir),
+  [Baza](takprog-2016-17/2_OKR/04_baza), [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage),
+  [Count the Regions](takprog-2016-17/PRI/Count) (2016-17); [Sort na stablu](takprog-2017-18/5_DRZ/05_sort_na_stablu),
+  [Obaranje](takprog-2017-18/5_DRZ/06_obaranje) (2017-18).
+- **Lost attachments for contestants (2):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer),
+  [vOOda](takprog-2022-23/05_SIO/05_vOOda) (2022-23, the zip with `compressor.cpp` and pictures).
+- **Placeholder section (1):** [Virus](takprog-2016-17/4_SIO/05_virus) (2016-17), the output description.
+- **No examples (3):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22),
+  [Quaestio militaris formationis](takprog-2023-24/05_SIO/04_quaestio_militaris_formationis) (2023-24).
+- **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
+  [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
+
+**Testcase problems (7 tasks)**
+
+- **No testcases (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI).
+- **Some tests from the 2024 collection, lost on Petlja (3):** [01 niz](takprog-2020-21/02_KV2/05_01_niz),
+  [Pitanja](takprog-2020-21/03_KV3/04_pitanja), [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo)
+  (2020-21).
+- **A test that fails today (1):** [Okrnjen trougao](takprog-2017-18/1_KV1/04_okrnjen_trougao) (2017-18): test 11
+  fails solutions that overflow a `double`.
+- **A test that can't be checked (1):** [Brojorb](takprog-2019-20/06_SIO/01_brojorb) (2019-20): test 1 always counts
+  as wrong.
+- **No `.out` files (1):** [Majstorija](takprog-2025-26/02_OKR/01_majstorija) (2025-26); the checker doesn't need them.
