@@ -354,3 +354,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Okružno | [Xormutacije 2](takprog-2025-26/02_OKR/04_xormutacije) | 1.5 s | 256 MB | 21 | default | — |
 | 2025-26 | Okružno | [Vasa, skupljač aure](takprog-2025-26/02_OKR/05_vasa_skupljac) | 1 s | 128 MB | 22 | default | — |
 | 2025-26 | Okružno | [Xorovanje delilaca](takprog-2025-26/02_OKR/06_xorovanje_delilaca) | 1 s | 256 MB | 22 | default | — |
+| 2025-26 | Državno | [Nameštaljka](takprog-2025-26/03_DRZ/01_cikcak) | 1 s | 64 MB | 39 | `checker.cpp` (custom) | — |
