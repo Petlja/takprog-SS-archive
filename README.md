@@ -296,3 +296,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | Kvalifikacije 2 | [Pećinski zečevi](takprog-2023-24/02_KV2/05_pecinski_zecevi) | 6 s | 512 MB | 29 | default | — |
 | 2023-24 | Okružno | [Usamljenost](takprog-2023-24/03_OKR/01_usamljenost) | 0.3 s | 64 MB | 22 | default | — |
 | 2023-24 | Okružno | [Dejn](takprog-2023-24/03_OKR/02_dejn) | 1 s | 64 MB | 23 | default | The 2024 collection has different tests 10–15 (of 23); these are the ones the contest ran |
+| 2023-24 | Okružno | [Bitvajz oranje](takprog-2023-24/03_OKR/03_bitvajz_oranje) | 2 s | 256 MB | 27 | default | — |
