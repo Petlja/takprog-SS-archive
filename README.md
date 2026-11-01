@@ -364,3 +364,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | EGOI izborno | [Dva Tornja](takprog-2025-26/04_EGOI_IZB/02_dva_tornja) | 2 s | 256 MB | 64 | default | — |
 | 2025-26 | EGOI izborno | [Takmičenje](takprog-2025-26/04_EGOI_IZB/03_takmicenje) | 1 s | 256 MB | 85 | default | — |
 | 2025-26 | EGOI izborno | [Tajna Matrica](takprog-2025-26/04_EGOI_IZB/04_tajna_matrica) | 1 s | 256 MB | 74 | `checker.cpp` (custom), `grader/` | Functional |
+| 2025-26 | SIO | [Prodaja](takprog-2025-26/05_SIO/01_prodaja) | 1 s | 64 MB | 158 | default, `grader/` | Functional |
