@@ -1,0 +1,4 @@
+type: testcase
+score_total: 100
+divisor: 25
+public: [1,2,3,4]
