@@ -40,6 +40,11 @@ versions carry that date; the contest's set is the version the problem still ser
 after the move. Every task was also compared with a second copy that Petlja kept separately, an early collection
 of the same tasks; where the two differ, the note says which one the contest used and why.
 
+From 2018-19 on, Petlja kept every test version with the time it was uploaded, and the competition's scoring file. The
+contest's set is the last version uploaded before the contest ended, with any tests uploaded separately before it
+ended. Where the commission corrected tests during a contest and graded every submission again, the set is the
+corrected one.
+
 ## Limits
 
 - **Time limit:** CPU time of the solution on one testcase, not wall-clock time.
