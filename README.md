@@ -356,3 +356,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Okružno | [Xorovanje delilaca](takprog-2025-26/02_OKR/06_xorovanje_delilaca) | 1 s | 256 MB | 22 | default | — |
 | 2025-26 | Državno | [Nameštaljka](takprog-2025-26/03_DRZ/01_cikcak) | 1 s | 64 MB | 39 | `checker.cpp` (custom) | — |
 | 2025-26 | Državno | [Aralski Mornar](takprog-2025-26/03_DRZ/02_aralski_mornar) | 1 s | 512 MB | 44 | default | Test 43 was replaced separately before the contest; this is the replaced version |
+| 2025-26 | Državno | [Sub67ce](takprog-2025-26/03_DRZ/03_sub67ce) | 2 s | 512 MB | 29 | default | — |
