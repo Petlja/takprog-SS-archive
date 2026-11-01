@@ -289,3 +289,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | Kvalifikacije 1 | [Presedanja](takprog-2023-24/01_KV1/03_presedanja) | 1 s | 64 MB | 22 | default | — |
 | 2023-24 | Kvalifikacije 1 | [Veća trka](takprog-2023-24/01_KV1/04_veca_trka) | 3 s | 64 MB | 22 | `checker.cpp` (custom) | — |
 | 2023-24 | Kvalifikacije 1 | [Fejk reklama](takprog-2023-24/01_KV1/05_fejk_reklama) | 1 s | 256 MB | 23 | default | All tests were uploaded separately before the contest; they are included |
+| 2023-24 | Kvalifikacije 2 | [Nadkvadrat](takprog-2023-24/02_KV2/01_nadkvadrat) | 0.1 s | 32 MB | 23 | default | — |
