@@ -215,6 +215,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2020-21 | Okružno | [Altruizam](takprog-2020-21/04_OKR/06_altruizam) | 1 s | 256 MB | 22 | default | The 2024 collection has different tests 4–21 (of 22); these are the ones the contest ran |
 | 2020-21 | Državno | [Kvadrati uzvraćaju udarac](takprog-2020-21/05_DRZ/01_kvadrati_uzvracaju_udarac) | 0.5 s | 256 MB | 25 | default | — |
 | 2020-21 | Državno | [Preduzeće](takprog-2020-21/05_DRZ/02_preduzece) | 1 s | 256 MB | 22 | default | — |
+| 2020-21 | Državno | [Proslava rođendana](takprog-2020-21/05_DRZ/03_proslava_rodjendana) | 2 s | 256 MB | 29 | default | — |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
