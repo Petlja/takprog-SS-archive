@@ -352,3 +352,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Okružno | [Hari Poter](takprog-2025-26/02_OKR/02_hari_poter) | 1 s | 128 MB | 22 | `checker.cpp` (custom) | No scoring config: each test is worth the points the checker prints (each `.out` gives the test's points), as at the contest |
 | 2025-26 | Okružno | [Abakus 2](takprog-2025-26/02_OKR/03_abakus) | 2 s | 256 MB | 22 | default | — |
 | 2025-26 | Okružno | [Xormutacije 2](takprog-2025-26/02_OKR/04_xormutacije) | 1.5 s | 256 MB | 21 | default | — |
+| 2025-26 | Okružno | [Vasa, skupljač aure](takprog-2025-26/02_OKR/05_vasa_skupljac) | 1 s | 128 MB | 22 | default | — |
