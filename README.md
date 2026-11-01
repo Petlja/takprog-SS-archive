@@ -271,3 +271,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2022-23 | Okružno | [Jednostavni pikado](takprog-2022-23/03_OKR/03_jednostavni_pikado) | 2 s | 512 MB | 22 | default | All tests were uploaded separately before the contest; they are included |
 | 2022-23 | Okružno | [Poklon](takprog-2022-23/03_OKR/04_poklon) | 1 s | 128 MB | 21 | default | Tests 16–21 were replaced separately before the contest; this is the replaced version |
 | 2022-23 | Okružno | [Krompiri](takprog-2022-23/03_OKR/05_krompiri) | 0.75 s | 64 MB | 22 | `checker.cpp` (custom) | The `.out` files hold only the largest number of potatoes; the checker verifies the contestant's plan itself |
+| 2022-23 | Okružno | [Sdneirf](takprog-2022-23/03_OKR/06_sdneirf) | 2 s | 256 MB | 22 | default | All tests were uploaded separately before the contest; they are included |
