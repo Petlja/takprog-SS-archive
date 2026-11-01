@@ -61,7 +61,8 @@ from there; otherwise from the collection, which matches every test Petlja does 
 contest pass the completed sets. The task's note says which tests these are.
 
 In 2021-22 the statements come from the collection, except SIO and the EJOI and EGOI selection rounds, which it
-doesn't have: those are Petlja's Markdown originals, and their tasks were not re-run; only the checkers were tried.
+doesn't have: those are Petlja's Markdown originals, and their tasks were checked with solutions submitted at the
+contest.
 
 In 2022-23 and 2023-24 the statements come from the collection, SIO included. Where the commission uploaded tests again during a
 contest, every earlier submission was graded again, so the set is the one Petlja had at the end; the task's note
