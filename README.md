@@ -287,3 +287,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2023-24 | Kvalifikacije 1 | [Tri tajna broja](takprog-2023-24/01_KV1/01_tri_tajna_broja) | 1 s | 64 MB | 21 | default | — |
 | 2023-24 | Kvalifikacije 1 | [Moramo da recikliramo](takprog-2023-24/01_KV1/02_moramo_da_recikliramo) | 2 s | 64 MB | 21 | default | Tests 17–21 were replaced separately before the contest; this is the replaced version |
 | 2023-24 | Kvalifikacije 1 | [Presedanja](takprog-2023-24/01_KV1/03_presedanja) | 1 s | 64 MB | 22 | default | — |
+| 2023-24 | Kvalifikacije 1 | [Veća trka](takprog-2023-24/01_KV1/04_veca_trka) | 3 s | 64 MB | 22 | `checker.cpp` (custom) | — |
