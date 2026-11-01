@@ -269,3 +269,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2022-23 | Okružno | [Kuvar](takprog-2022-23/03_OKR/01_kuvar) | 1 s | 64 MB | 12 | default | The 2024 collection has different tests 3–12 (of 12); these are the ones the contest ran |
 | 2022-23 | Okružno | [Razmena znaka](takprog-2022-23/03_OKR/02_razmena_znaka) | 1.5 s | 256 MB | 21 | default | All tests were uploaded separately before the contest; they are included |
 | 2022-23 | Okružno | [Jednostavni pikado](takprog-2022-23/03_OKR/03_jednostavni_pikado) | 2 s | 512 MB | 22 | default | All tests were uploaded separately before the contest; they are included |
+| 2022-23 | Okružno | [Poklon](takprog-2022-23/03_OKR/04_poklon) | 1 s | 128 MB | 21 | default | Tests 16–21 were replaced separately before the contest; this is the replaced version |
