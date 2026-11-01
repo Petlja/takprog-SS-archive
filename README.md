@@ -55,6 +55,10 @@ In 2022-23 and 2023-24 the statements come from the collection, SIO included. Wh
 contest, every earlier submission was graded again, so the set is the one Petlja had at the end; the task's note
 says so where the tests changed.
 
+2024-25 and later have no collection: the statements are the commission's Markdown originals from Petlja, in
+Cyrillic, and the tasks were not re-run; only the checkers were tried against the official outputs. From the 2024-25
+selection rounds on, the contests ran on Petlja's Linux grader.
+
 ## Limits
 
 - **Time limit:** CPU time of the solution on one testcase, not wall-clock time.
