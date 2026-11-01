@@ -320,3 +320,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2024-25 | Kvalifikacije 1 | [Plazma](takprog-2024-25/01_KV1/02_plazma) | 3 s | 128 MB | 52 | default | All tests were uploaded separately before the contest; they are included |
 | 2024-25 | Kvalifikacije 1 | [Požar](takprog-2024-25/01_KV1/03_pozar) | 1 s | 256 MB | 24 | default | — |
 | 2024-25 | Kvalifikacije 1 | [Konveksni skoro omotač](takprog-2024-25/01_KV1/04_konveksni_skoro_omotac) | 1.5 s | 64 MB | 28 | default | — |
+| 2024-25 | Kvalifikacije 1 | [Dva niza](takprog-2024-25/01_KV1/05_dvaniza) | 1.5 s | 256 MB | 26 | default | During the contest a wrong 23-test upload was live for 17 minutes; the next upload restored these tests, and every submission was graded again on them |
