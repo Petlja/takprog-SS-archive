@@ -358,3 +358,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Državno | [Aralski Mornar](takprog-2025-26/03_DRZ/02_aralski_mornar) | 1 s | 512 MB | 44 | default | Test 43 was replaced separately before the contest; this is the replaced version |
 | 2025-26 | Državno | [Sub67ce](takprog-2025-26/03_DRZ/03_sub67ce) | 2 s | 512 MB | 29 | default | — |
 | 2025-26 | Državno | [Ekskluzivni Kamp](takprog-2025-26/03_DRZ/04_fini_cvorovi) | 1 s | 256 MB | 45 | `checker.cpp` (custom) | Test 1's input was corrected twice in the contest's first half hour; 13 of the 14 earlier submissions weren't graded again |
+| 2025-26 | Državno | [Kodforses blog](takprog-2025-26/03_DRZ/05_codeforces_blogovi) | 0.25 s | 256 MB | 137 | `checker.cpp` (custom) | Tests 11–13, 35, 38 were replaced separately before the contest; this is the replaced version |
