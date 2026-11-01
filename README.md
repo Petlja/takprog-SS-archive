@@ -180,6 +180,7 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2019-20 | Okružno | [Dobitni listić](takprog-2019-20/04_OKR/04_dobitni_listic) | 0.5 s | 512 MB | 22 | `checker.cpp` (custom) | — |
 | 2019-20 | Okružno | [Bezbedna podmatrica](takprog-2019-20/04_OKR/05_bezbedna_podmatrica) | 1 s | 512 MB | 22 | `checker.cpp` (exact tokens) | — |
 | 2019-20 | Okružno | [Moj broj](takprog-2019-20/04_OKR/06_moj_broj) | 0.3 s | 512 MB | 11 | `checker.cpp` (custom, converted) | The original checker returned the points (10–100, `divisor: 100`) as its exit code |
+| 2019-20 | Državno | [Lek](takprog-2019-20/05_DRZ/01_lek) | 2 s | 256 MB | 42 | `checker.cpp` (custom, one include added) | One `#include <vector>` was added to the checker: today's g++ needs it, and without it nothing has been accepted since 2025 |
 | 2021-22 | Kvalifikacije 1 | [Nesusedni](takprog-2021-22/01_KV1/01_nesusedni) | 0.2 s | 256 MB | 22 | `checker.cpp` (custom, converted) | The original checker returned 5 for a correct answer and −1 otherwise |
 | 2021-22 | Kvalifikacije 1 | [Transfuzija krvi](takprog-2021-22/01_KV1/02_transfuzija) | 0.5 s | 256 MB | 12 | `checker.cpp` (custom) | — |
 | 2021-22 | Kvalifikacije 1 | [Prepisivači](takprog-2021-22/01_KV1/03_prepisivaci) | 1 s | 256 MB | 22 | default | Example 2 (test 2, 0 points) was replaced during the contest, in the statement too; this is the replaced version |
