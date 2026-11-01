@@ -1,0 +1,96 @@
+type: testcase
+score_total: 100
+score_overrides:
+    - name: 1
+      score: 0
+    - name: 2
+      score: 1
+    - name: 3
+      score: 1
+    - name: 4
+      score: 1
+    - name: 5
+      score: 1
+    - name: 6
+      score: 1
+    - name: 7
+      score: 1
+    - name: 8
+      score: 1
+    - name: 9
+      score: 1
+    - name: 10
+      score: 1
+    - name: 11
+      score: 1
+    - name: 12
+      score: 3
+    - name: 13
+      score: 3
+    - name: 14
+      score: 3
+    - name: 15
+      score: 3
+    - name: 16
+      score: 3
+    - name: 17
+      score: 3
+    - name: 18
+      score: 3
+    - name: 19
+      score: 3
+    - name: 20
+      score: 3
+    - name: 21
+      score: 3
+    - name: 22
+      score: 3
+    - name: 23
+      score: 3
+    - name: 24
+      score: 3
+    - name: 25
+      score: 3
+    - name: 26
+      score: 3
+    - name: 27
+      score: 3
+    - name: 28
+      score: 3
+    - name: 29
+      score: 3
+    - name: 30
+      score: 3
+    - name: 31
+      score: 3
+    - name: 32
+      score: 2
+    - name: 33
+      score: 2
+    - name: 34
+      score: 2
+    - name: 35
+      score: 2
+    - name: 36
+      score: 2
+    - name: 37
+      score: 2
+    - name: 38
+      score: 2
+    - name: 39
+      score: 2
+    - name: 40
+      score: 2
+    - name: 41
+      score: 2
+    - name: 42
+      score: 2
+    - name: 43
+      score: 2
+    - name: 44
+      score: 2
+    - name: 45
+      score: 2
+    - name: 46
+      score: 2
+public: [1]
