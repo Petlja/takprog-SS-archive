@@ -276,3 +276,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2022-23 | Državno | [Xor Fabrika](takprog-2022-23/04_DRZ/02_xor_fabrika) | 1 s | 64 MB | 21 | default | All tests were uploaded separately before the contest; they are included |
 | 2022-23 | Državno | [Kirbi](takprog-2022-23/04_DRZ/03_kirbi) | 3 s | 64 MB | 21 | default | All tests were uploaded separately before the contest; they are included. The patches also left tests 22–25 from an earlier layout of the tests; the contest graded only 1–21, so they are not included |
 | 2022-23 | Državno | [Život u gradu](takprog-2022-23/04_DRZ/04_zivot_u_gradu) | 1 s | 256 MB | 34 | `checker.cpp` (custom) | All tests were uploaded separately before the contest; they are included |
+| 2022-23 | Državno | [Bekstvo](takprog-2022-23/04_DRZ/05_bekstvo) | 1 s | 512 MB | 95 | default | — |
