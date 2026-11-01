@@ -326,3 +326,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2024-25 | Kvalifikacije 2 | [Putešestvije](takprog-2024-25/02_KV2/03_putesestvije) | 3 s | 256 MB | 22 | `checker.cpp` (custom) | The `.out` files are empty: the checker verifies the contestant's tour itself |
 | 2024-25 | Kvalifikacije 2 | [Daltonizacija](takprog-2024-25/02_KV2/04_daltonizacija) | 2 s | 128 MB | 27 | default | — |
 | 2024-25 | Kvalifikacije 2 | [Zanimljivi grafovski upiti](takprog-2024-25/02_KV2/05_zanimljivi_grafovski_upiti) | 8.5 s | 1024 MB | 22 | default | — |
+| 2024-25 | Kvalifikacije za izborno | [Karte 3](takprog-2024-25/A_PIZ/01_karte_3) | 1 s | 256 MB | 21 | default | — |
