@@ -2,7 +2,8 @@
 
 Tasks from Serbian informatics competitions (Takprog), restored from Petlja and checked, for the competition
 archive. Each task has everything needed to set it again: statement with examples, testcases, checker (or grader), scoring,
-and time and memory limits. The tasks are under CC BY, as the competition commission publishes them.
+and time and memory limits. The tasks are under CC BY, as the competition commission publishes them, except the six
+of the 2017 training camp (`takprog-2016-17/PRI`): those are ICPC problems, and their statements are ICPC's.
 
 ## Layout
 
@@ -33,6 +34,11 @@ not re-run. In 2016-17, the statements are Petlja's own, in Latin script as the 
 HTML. Petlja kept only one version of the tests, so the contest's set is the one it still has; where a round was
 also set up as a separate testing competition, the two sets were compared. The scoring was kept as per-test and
 per-subtask rows rather than a scoring file; `scoring.yaml` is rebuilt from them.
+
+The 2017 training camp (PRI, two practice contests in June and July 2017) used six ICPC problems, in English, with
+Petlja's section headings. They were judged as at ICPC: a submission solves the problem or doesn't, and Petlja has no
+scoring for them, so `scoring.yaml` gives the 100 points only for passing every test. Most have a single test file
+with many cases, so the statement's examples are not separate tests.
 
 In 2017-18 the statements are the commission's Markdown originals, in Cyrillic, as Petlja stores them (Kvalifikacije 1
 has only Petlja's HTML, converted the same way as 2016-17). Petlja moved every test file in November 2018, so all
