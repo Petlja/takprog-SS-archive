@@ -346,3 +346,4 @@ Limits are the competition's. *Checker* is `default` when the task uses a plain 
 | 2025-26 | Kvalifikacije | [Mst 😭](takprog-2025-26/01_KV/07_mst_😭) | 1 s | 256 MB | 51 | default | — |
 | 2025-26 | Kvalifikacije | [Igra sa Kartama](takprog-2025-26/01_KV/08_Igra_sa_kartama) | 3 s | 256 MB | 23 | default | Test 8 was replaced separately before the contest; this is the replaced version |
 | 2025-26 | Kvalifikacije | [Potera](takprog-2025-26/01_KV/09_potera) | 5 s | 256 MB | 27 | default | — |
+| 2025-26 | Kvalifikacije | [Perica i novogodisnje stablo](takprog-2025-26/01_KV/10_laganje) | 0.5 s | 256 MB | 51 | `checker.cpp` (custom) | Test 1 is the statement's example; its input had a wrong number until day 8 of the 10-day round, when a patch corrected it. The 100 earlier submissions weren't graded again |
