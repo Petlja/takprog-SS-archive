@@ -14,7 +14,8 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 | `*.png` | Pictures the statement shows, if any |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result. Checkers marked *rewritten* replace one that survives only as a Windows binary: they were written in 2026 from the statement |
-| `scoring.yaml` | The competition's scoring: subtasks, points, public tests |
+| `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
+| `grader/` | Functional tasks only (the contestant writes functions, not a program): the competition's grader, per language, as Petlja serves it. `cpp/main.cpp` and `cpp/code.h` are compiled together with the contestant's file; `pas/` is the Pascal version from the same contest |
 
 ## How a task gets here
 
@@ -32,6 +33,12 @@ not re-run. In 2016-17, the statements are Petlja's own, in Latin script as the 
 HTML. Petlja kept only one version of the tests, so the contest's set is the one it still has; where a round was
 also set up as a separate testing competition, the two sets were compared. The scoring was kept as per-test and
 per-subtask rows rather than a scoring file; `scoring.yaml` is rebuilt from them.
+
+In 2017-18 the statements are the commission's Markdown originals, in Cyrillic, as Petlja stores them (Kvalifikacije 1
+has only Petlja's HTML, converted the same way as 2016-17). Petlja moved every test file in November 2018, so all
+versions carry that date; the contest's set is the version the problem still serves, unless that one was uploaded
+after the move. Every task was also compared with a second copy that Petlja kept separately, an early collection
+of the same tasks; where the two differ, the note says which one the contest used and why.
 
 ## Limits
 
