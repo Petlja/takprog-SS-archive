@@ -68,8 +68,10 @@ In 2021-22 the statements come from the collection, except SIO and the EJOI and 
 doesn't have: those are Petlja's Markdown originals, and their tasks were checked with solutions submitted at the
 contest.
 
-In 2022-23 and 2023-24 the statements come from the collection, SIO included. Where the commission uploaded tests again during a
-contest, every earlier submission was graded again, so the set is the one Petlja had at the end.
+In 2022-23 and 2023-24 the statements come from the collection, SIO included, except Quaestio militaris formationis
+(2023-24 SIO): the collection has another task's statement there, so it is Petlja's Markdown original. Where the
+commission uploaded tests again during a contest, every earlier submission was graded again, so the set is the one
+Petlja had at the end.
 
 2024-25 and later have no collection: the statements are the commission's Markdown originals from Petlja, in
 Cyrillic, and the tasks were checked with solutions submitted at the contest. From the 2024-25
@@ -354,7 +356,7 @@ Please check the tasks against your own copies too.
 | 2023-24 | SIO | [Spartacus](takprog-2023-24/05_SIO/01_spartacus) | functional | 0.1 s | 256 MB | 68 | `checker.cpp` (exact tokens) | — | — |
 | 2023-24 | SIO | [Et tu, Brute?](takprog-2023-24/05_SIO/02_et_tu_brute) | functional | 1.5 s | 256 MB | 50 | default | — | — |
 | 2023-24 | SIO | [E pluribus unum](takprog-2023-24/05_SIO/03_e_pluribus_unum) | functional | 3.5 s | 256 MB | 93 | default | — | — |
-| 2023-24 | SIO | [Quaestio militaris formationis](takprog-2023-24/05_SIO/04_quaestio_militaris_formationis) | functional | 1 s | 256 MB | 31 | `checker.cpp` (custom) | No examples | — |
+| 2023-24 | SIO | [Quaestio militaris formationis](takprog-2023-24/05_SIO/04_quaestio_militaris_formationis) | functional | 1 s | 256 MB | 31 | `checker.cpp` (custom) | — | — |
 | 2023-24 | SIO | [Viae Romanae](takprog-2023-24/05_SIO/05_viae_romanae) | functional | 1.5 s | 256 MB | 104 | default | — | — |
 | 2023-24 | SIO | [Turris inclinata](takprog-2023-24/05_SIO/06_turris_inclinata) | functional | 1.5 s | 256 MB | 80 | default | — | — |
 | 2024-25 | Kvalifikacije 1 | [Pećina](takprog-2024-25/01_KV1/01_pecina) | standard | 0.2 s | 64 MB | 23 | default | — | — |
@@ -415,18 +417,17 @@ Please check the tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **15 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **14 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (9 tasks)**
+**Task problems (8 tasks)**
 
 - **Lost pictures (2):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) and
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
 - **Lost attachments for contestants (2):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer),
   [vOOda](takprog-2022-23/05_SIO/05_vOOda) (2022-23, the zip and `compressor.cpp`; its eight pictures have been restored).
 - **Placeholder section (1):** [Virus](takprog-2016-17/4_SIO/05_virus) (2016-17), the output description.
-- **No examples (3):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22),
-  [Quaestio militaris formationis](takprog-2023-24/05_SIO/04_quaestio_militaris_formationis) (2023-24).
+- **No examples (2):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 
