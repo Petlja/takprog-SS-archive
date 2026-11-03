@@ -79,7 +79,7 @@ tasks against your own copies too.
 | 2017-18 | Kvalifikacije 1 | [Prva cifra](takprog-2017-18/1_KV1/01_prva_cifra) | standard | 0.1 s | 64 MB | 12 | default | — | — |
 | 2017-18 | Kvalifikacije 1 | [Transformacija matrice](takprog-2017-18/1_KV1/02_transformacija_matrice) | standard | 4 s | 128 MB | 22 | default | — | — |
 | 2017-18 | Kvalifikacije 1 | [Prodavnice](takprog-2017-18/1_KV1/03_prodavnice) | standard | 1 s | 64 MB | 22 | default | — | — |
-| 2017-18 | Kvalifikacije 1 | [Okrnjen trougao](takprog-2017-18/1_KV1/04_okrnjen_trougao) | standard | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — | Test 11's answer is about 2.6·10³⁵: solutions that overflow a `double` along the way fail it today (the 2017 grader let them through) |
+| 2017-18 | Kvalifikacije 1 | [Okrnjen trougao](takprog-2017-18/1_KV1/04_okrnjen_trougao) | standard | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — | — |
 | 2017-18 | Kvalifikacije 1 | [Nagrade](takprog-2017-18/1_KV1/05_nagrade) | standard | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — | — |
 | 2017-18 | Kvalifikacije 2 | [Mala matrica](takprog-2017-18/2_KV2/01_mala_matrica) | standard | 1 s | 256 MB | 22 | `checker.cpp` (custom) | — | — |
 | 2017-18 | Kvalifikacije 2 | [Trivijalan broj](takprog-2017-18/2_KV2/02_trivijalan_broj) | standard | 2 s | 256 MB | 11 | default | — | — |
@@ -362,7 +362,7 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **13 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **12 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
 **Task problems (8 tasks)**
@@ -376,13 +376,11 @@ Luggage is in both lists).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 
-**Testcase problems (6 tasks)**
+**Testcase problems (5 tasks)**
 
 - **No testcases (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI).
 - **Some tests from the 2024 collection, lost on Petlja (3):** [01 niz](takprog-2020-21/02_KV2/05_01_niz),
   [Pitanja](takprog-2020-21/03_KV3/04_pitanja), [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo)
   (2020-21).
-- **A test that fails today (1):** [Okrnjen trougao](takprog-2017-18/1_KV1/04_okrnjen_trougao) (2017-18): test 11
-  fails solutions that overflow a `double`.
 - **A test that can't be checked (1):** [Brojorb](takprog-2019-20/06_SIO/01_brojorb) (2019-20): test 1 always counts
   as wrong.
