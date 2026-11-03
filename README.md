@@ -13,7 +13,7 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 |---|---|
 | `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB). In Cyrillic, except 2016-17's and Kvalifikacije 1 2017-18's (Latin script) and the training camp's (English) |
 | `*.png` | Pictures the statement shows, if any. vOOda's `1.png`–`8.png` are its eight input pictures, matching its input tests |
-| `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against |
+| `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against; Majstorija (2025-26) has no `.out` files at all |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result. Checkers marked *rewritten* replace one that couldn't be retrieved (only a Windows binary or an empty source survives): they were written in 2026 from the statement. Checkers run with an unlimited stack, as on Petlja's grader |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
 | `grader/` | Functional tasks only (the contestant writes functions, not a program): the competition's grader, per language, as Petlja serves it. `cpp/main.cpp` and `cpp/code.h` are compiled together with the contestant's file; `pas/` is the Pascal version from the same contest |
@@ -335,7 +335,7 @@ tasks against your own copies too.
 | 2025-26 | Kvalifikacije | [Potera](takprog-2025-26/01_KV/09_potera) | standard | 5 s | 256 MB | 27 | default | — | — |
 | 2025-26 | Kvalifikacije | [Perica i novogodisnje stablo](takprog-2025-26/01_KV/10_laganje) | standard | 0.5 s | 256 MB | 51 | `checker.cpp` (custom) | — | — |
 | 2025-26 | Kvalifikacije | [Srecko i Ponchoi](takprog-2025-26/01_KV/11_srecko_i_poncoi) | standard | 1 s | 512 MB | 51 | `checker.cpp` (custom) | — | — |
-| 2025-26 | Okružno | [Majstorija](takprog-2025-26/02_OKR/01_majstorija) | standard | 1 s | 256 MB | 21 | `checker.cpp` (custom) | — | No `.out` files: the checker doesn't use them |
+| 2025-26 | Okružno | [Majstorija](takprog-2025-26/02_OKR/01_majstorija) | standard | 1 s | 256 MB | 21 | `checker.cpp` (custom) | — | — |
 | 2025-26 | Okružno | [Hari Poter](takprog-2025-26/02_OKR/02_hari_poter) | standard | 1 s | 128 MB | 22 | `checker.cpp` (custom) | — | — |
 | 2025-26 | Okružno | [Abakus 2](takprog-2025-26/02_OKR/03_abakus) | standard | 2 s | 256 MB | 22 | default | — | — |
 | 2025-26 | Okružno | [Xormutacije 2](takprog-2025-26/02_OKR/04_xormutacije) | standard | 1.5 s | 256 MB | 21 | default | — | — |
@@ -362,7 +362,7 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **14 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **13 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
 **Task problems (8 tasks)**
@@ -376,7 +376,7 @@ Luggage is in both lists).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 
-**Testcase problems (7 tasks)**
+**Testcase problems (6 tasks)**
 
 - **No testcases (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI).
 - **Some tests from the 2024 collection, lost on Petlja (3):** [01 niz](takprog-2020-21/02_KV2/05_01_niz),
@@ -386,4 +386,3 @@ Luggage is in both lists).
   fails solutions that overflow a `double`.
 - **A test that can't be checked (1):** [Brojorb](takprog-2019-20/06_SIO/01_brojorb) (2019-20): test 1 always counts
   as wrong.
-- **No `.out` files (1):** [Majstorija](takprog-2025-26/02_OKR/01_majstorija) (2025-26); the checker doesn't need them.
