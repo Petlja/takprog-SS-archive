@@ -203,7 +203,7 @@ tasks against your own copies too.
 | 2020-21 | Državno | [Žice](takprog-2020-21/05_DRZ/04_zice) | standard | 1 s | 256 MB | 16 | `checker.cpp` (exact tokens) | — | — |
 | 2020-21 | Državno | [Jakuze](takprog-2020-21/05_DRZ/05_jakuze) | standard | 2 s | 256 MB | 25 | default | — | — |
 | 2020-21 | Državno | [NZD permutacije](takprog-2020-21/05_DRZ/06_nzd_permutacije) | standard | 2 s | 256 MB | 25 | default | — | — |
-| 2020-21 | SIO | [RNK](takprog-2020-21/06_SIO/01_rnk) | functional | 1 s | 256 MB | 20 | `checker.cpp` (custom) | No examples | — |
+| 2020-21 | SIO | [RNK](takprog-2020-21/06_SIO/01_rnk) | functional | 1 s | 256 MB | 20 | `checker.cpp` (custom) | — | — |
 | 2020-21 | SIO | [Marsko](takprog-2020-21/06_SIO/02_marsko) | functional | 1 s | 256 MB | 23 | default | — | — |
 | 2020-21 | SIO | [Tačke](takprog-2020-21/06_SIO/03_tacke) | functional | 2 s | 256 MB | 40 | default | — | — |
 | 2020-21 | SIO | [Izvlačenje slamki](takprog-2020-21/06_SIO/04_izvlacenje_slamki) | functional | 1 s | 256 MB | 32 | `checker.cpp` (exact tokens) | — | — |
@@ -363,15 +363,15 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **9 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **8 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (6 tasks)**
+**Task problems (5 tasks)**
 
 - **Lost pictures (2):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) and
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
 - **Lost attachment for contestants (1):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer).
-- **No examples (2):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22).
+- **No examples (1):** [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 
