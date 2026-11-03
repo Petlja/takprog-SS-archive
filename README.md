@@ -32,11 +32,13 @@ cases, so the statement's examples are not separate tests.
   `-std=gnu++17 -O2 -static`; Python is 3.13.
 - The limits are the ones set for the competition, on the grader of that time (until 2025 a Windows machine with
   other compilers). Every task's solutions were re-run on today's grader and pass within the limits, except where
-  the table says otherwise.
+  the table says otherwise. One limit was raised: [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19 SIO) had
+  64 MB, which today's grader applies to the memory a program declares, not only what it uses, so solutions with
+  large arrays crash at start; it has 128 MB here.
 
 ## Tasks
 
-Limits are the competition's. *Type* is `standard` (the program reads the input and writes the output), `functional`
+Limits are the competition's (Planine's memory excepted, see above). *Type* is `standard` (the program reads the input and writes the output), `functional`
 (the contestant writes functions; `grader/` has the main program) or `output-only` (contestants submit the output
 files, so the limits don't apply). *Checker* is `default` when the task uses a plain token comparison and needs no
 `checker.cpp`.
@@ -141,7 +143,7 @@ tasks against your own copies too.
 | 2018-19 | SIO | [Crno-bela zvezda](takprog-2018-19/06_SIO/02_zvezda) | functional | 0.4 s | 64 MB | 57 | default | — | — |
 | 2018-19 | SIO | [Kamera](takprog-2018-19/06_SIO/03_kamera) | functional | 5 s | 512 MB | 45 | default | — | — |
 | 2018-19 | SIO | [Skladište](takprog-2018-19/06_SIO/04_skladiste) | functional | 0.3 s | 128 MB | 20 | default | — | — |
-| 2018-19 | SIO | [Planine](takprog-2018-19/06_SIO/05_planine) | functional | 1 s | 64 MB | 61 | `checker.cpp` (custom) | 64 MB is too tight for today's grader, which counts memory a program declares: solutions accepted at the contest crash at start | — |
+| 2018-19 | SIO | [Planine](takprog-2018-19/06_SIO/05_planine) | functional | 1 s | 128 MB | 61 | `checker.cpp` (custom) | — | — |
 | 2018-19 | SIO | [Film](takprog-2018-19/06_SIO/06_film) | functional | 1 s | 256 MB | 58 | `checker.cpp` (custom) | — | — |
 | 2019-20 | Kvalifikacije 1 | [Isplata](takprog-2019-20/01_KV1/01_isplata) | standard | 0.1 s | 64 MB | 22 | `checker.cpp` (exact tokens) | — | — |
 | 2019-20 | Kvalifikacije 1 | [Odbojka](takprog-2019-20/01_KV1/02_odbojka) | standard | 1 s | 64 MB | 23 | `checker.cpp` (custom) | — | — |
@@ -363,14 +365,13 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **5 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **4 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (2 tasks)**
+**Task problems (1 task)**
 
 - **Lost picture (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
-- **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
-  [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
+- **Limits (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 
 **Testcase problems (4 tasks)**
 
