@@ -13,6 +13,7 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 |---|---|
 | `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB). In Cyrillic, except 2016-17's and Kvalifikacije 1 2017-18's (Latin script) and the training camp's (English) |
 | `*.png` | Pictures the statement shows, if any. vOOda's `1.png`–`8.png` are its eight input pictures, matching its input tests |
+| Other files | Files the contestants were given with the task: vOOda's `compressor.cpp`, which turns a list of cells into the output format |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against; Majstorija (2025-26) has no `.out` files at all |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result. Checkers marked *rewritten* replace one that couldn't be retrieved (only a Windows binary or an empty source survives): they were written in 2026 from the statement. Checkers run with an unlimited stack, as on Petlja's grader |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
@@ -274,7 +275,7 @@ tasks against your own copies too.
 | 2022-23 | SIO | [Kompresovani niz](takprog-2022-23/05_SIO/02_kompresovani_niz) | functional | 0.5 s | 256 MB | 132 | default | — | — |
 | 2022-23 | SIO | [Najslabija karika](takprog-2022-23/05_SIO/03_samo_najjaci_opstaju) | functional | 3.5 s | 512 MB | 50 | default | — | — |
 | 2022-23 | SIO | [Opet XOR](takprog-2022-23/05_SIO/04_opet_xor) | functional | 4 s | 512 MB | 13 | default | — | — |
-| 2022-23 | SIO | [vOOda](takprog-2022-23/05_SIO/05_vOOda) | output-only | — | — | 8 | `checker.cpp` (custom) | The contestants' zip and `compressor.cpp` are absent here; pictures `1.png`–`8.png` were restored from the commission repository; `compressor.cpp` is in the 2024 collection | — |
+| 2022-23 | SIO | [vOOda](takprog-2022-23/05_SIO/05_vOOda) | output-only | — | — | 8 | `checker.cpp` (custom) | — | — |
 | 2022-23 | SIO | [Parovi](takprog-2022-23/05_SIO/06_parovi) | functional | 1 s | 64 MB | 61 | default | — | — |
 | 2023-24 | Kvalifikacije 1 | [Tri tajna broja](takprog-2023-24/01_KV1/01_tri_tajna_broja) | standard | 1 s | 64 MB | 21 | default | — | — |
 | 2023-24 | Kvalifikacije 1 | [Moramo da recikliramo](takprog-2023-24/01_KV1/02_moramo_da_recikliramo) | standard | 2 s | 64 MB | 21 | default | — | — |
@@ -362,15 +363,14 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **10 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **9 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (7 tasks)**
+**Task problems (6 tasks)**
 
 - **Lost pictures (2):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) and
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
-- **Lost attachments for contestants (2):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer),
-  [vOOda](takprog-2022-23/05_SIO/05_vOOda) (2022-23, the zip and `compressor.cpp`; its eight pictures have been restored).
+- **Lost attachment for contestants (1):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer).
 - **No examples (2):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
