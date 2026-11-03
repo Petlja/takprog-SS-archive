@@ -192,7 +192,7 @@ tasks against your own copies too.
 | 2020-21 | Kvalifikacije 3 | [Šampion](takprog-2020-21/03_KV3/01_sampion) | standard | 1 s | 256 MB | 23 | `checker.cpp` (exact tokens) | — | — |
 | 2020-21 | Kvalifikacije 3 | [Gejm šou](takprog-2020-21/03_KV3/02_gejm_sou) | standard | 1 s | 256 MB | 21 | default | — | — |
 | 2020-21 | Kvalifikacije 3 | [Karte 2](takprog-2020-21/03_KV3/03_karte2) | standard | 2.5 s | 256 MB | 12 | `checker.cpp` (custom) | — | — |
-| 2020-21 | Kvalifikacije 3 | [Pitanja](takprog-2020-21/03_KV3/04_pitanja) | standard | 1.5 s | 1024 MB | 27 | default | — | Tests 19–27 are lost on Petlja; these are the 2024 collection's |
+| 2020-21 | Kvalifikacije 3 | [Pitanja](takprog-2020-21/03_KV3/04_pitanja) | standard | 1.5 s | 1024 MB | 27 | default | — | — |
 | 2020-21 | Kvalifikacije 3 | [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo) | standard | 2 s | 256 MB | 21 | `checker.cpp` (custom) | — | Tests 13–21 are lost on Petlja; these are the 2024 collection's |
 | 2020-21 | Okružno | [Takmičar](takprog-2020-21/04_OKR/01_takmicar) | standard | 1.5 s | 256 MB | 22 | `checker.cpp` (exact tokens) | — | — |
 | 2020-21 | Okružno | [Lepa matrica](takprog-2020-21/04_OKR/02_lepa_matrica) | standard | 2 s | 256 MB | 21 | default | — | — |
@@ -366,9 +366,9 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **2 tasks have a problem**, listed below.
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **1 task has a problem**, listed below.
 
-**Testcase problems (2 tasks)**
+**Testcase problems (1 task)**
 
-- **Some tests from the 2024 collection, lost on Petlja (2):** [Pitanja](takprog-2020-21/03_KV3/04_pitanja), [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo)
+- **Some tests from the 2024 collection, lost on Petlja (1):** [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo)
   (2020-21).
