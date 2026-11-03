@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neonke: vizualizacija rešenja</title>
+<!--
+  Neonke (SIO 2016-17): shows a solution for one input as the statement scores it. Open this file in a browser and
+  choose the case-??.in and case-??.out files (several at once is fine; files are paired by name). Nothing is sent
+  anywhere: the files are read in the browser. Written in 2026 in place of the lost Neonke.jar; it applies the same
+  rules as the task's checker.cpp.
+-->
+<style>
+  :root { --bg: #f6f6f4; --panel: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --line: #d9d9d4; --bad: #b3261e; --good: #1e6b34; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, sans-serif; }
+  header, main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  p { margin: 4px 0; color: var(--muted); }
+  .bar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 12px 0; }
+  .cases button { font: inherit; padding: 4px 10px; border: 1px solid var(--line); background: var(--panel); border-radius: 6px; cursor: pointer; }
+  .cases button[aria-pressed="true"] { border-color: var(--text); font-weight: 600; }
+  #drop { border: 2px dashed var(--line); border-radius: 8px; padding: 14px; background: var(--panel); }
+  #drop.over { border-color: var(--text); }
+  table { border-collapse: collapse; background: var(--panel); }
+  td { padding: 3px 12px 3px 0; vertical-align: top; }
+  td:first-child { color: var(--muted); }
+  #status { font-weight: 600; }
+  #status.bad { color: var(--bad); }
+  #status.good { color: var(--good); }
+  #view { overflow: auto; max-height: 80vh; width: fit-content; max-width: 100%; border: 1px solid var(--line); margin-top: 12px; }
+  canvas { display: block; image-rendering: pixelated; }
+  #hover { min-height: 1.45em; font-variant-numeric: tabular-nums; }
+  .legend span { display: inline-block; width: 12px; height: 12px; vertical-align: -1px; margin: 0 4px 0 10px; border: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Neonke: vizualizacija rešenja</h1>
+  <p>Izaberite ulazne (<code>case-??.in</code>) i izlazne (<code>case-??.out</code>) fajlove, ili ih prevucite ovde.
+     Fajlovi se uparuju po imenu. Neonke upaljene istim ručnim paljenjem imaju istu boju.</p>
+</header>
+<main>
+  <div id="drop"><input type="file" id="files" multiple accept=".in,.out,.txt"></div>
+  <div class="bar cases" id="cases"></div>
+  <div class="bar">
+    <label>Veličina polja <input type="range" id="zoom" min="1" max="24" value="1"> <span id="zoomv"></span> px</label>
+    <span class="legend"><span style="background:#0d1020"></span>tamno <span style="background:#5a5a5a"></span>zid
+      <span style="background:#ffffff"></span>neonka</span>
+  </div>
+  <table><tbody id="stats"></tbody></table>
+  <div id="hover"></div>
+  <div id="view"><canvas id="canvas" width="0" height="0"></canvas></div>
+</main>
+<script>
+"use strict";
+
+// ---- Scoring rules (the statement's, as checker.cpp applies them) ----
+
+function parseInput(text) {
+  const t = text.split(/\s+/).filter(Boolean);
+  if (t.length < 6) throw new Error("ulaz nema N, M, R, C, P i B");
+  const [n, m, r, c, p, b] = t.slice(0, 6).map(Number);
+  const cells = t.slice(6).join("");
+  if (cells.length < n * m) throw new Error("ulaz ima manje od N × M polja");
+  const plan = new Uint8Array((n + 1) * (m + 1));        // 1 = wall, 1-based
+  const walls = new Int32Array((n + 1) * (m + 1));       // 2D prefix sums of walls
+  const kind = new Uint8Array(n * m);                    // 0 '.', 1 '#', 2 '-'
+  for (let i = 1; i <= n; i++)
+    for (let j = 1; j <= m; j++) {
+      const ch = cells[(i - 1) * m + (j - 1)];
+      const w = ch !== "." ? 1 : 0;
+      kind[(i - 1) * m + (j - 1)] = ch === "." ? 0 : ch === "-" ? 2 : 1;
+      plan[i * (m + 1) + j] = w;
+      walls[i * (m + 1) + j] = w + walls[(i - 1) * (m + 1) + j] + walls[i * (m + 1) + j - 1] - walls[(i - 1) * (m + 1) + j - 1];
+    }
+  return { n, m, r, c, p, b, plan, walls, kind };
+}
+
+function wallsBetween(g, x1, y1, x2, y2) {
+  if (x1 > x2) [x1, x2] = [x2, x1];
+  if (y1 > y2) [y1, y2] = [y2, y1];
+  const w = g.walls, s = g.m + 1;
+  return w[x2 * s + y2] - w[(x1 - 1) * s + y2] - w[x2 * s + y1 - 1] + w[(x1 - 1) * s + y1 - 1];
+}
+
+// Returns the neons (in file order), their groups, cost, lit cells and, if the file is invalid, why.
+function evaluate(g, text) {
+  const res = { error: null, neons: [], group: [], groups: 0, cost: 0, cells: 0, lit: new Int32Array(g.n * g.m) };
+  const tok = text.split(/\s+/).filter(Boolean);
+  const bad = tok.findIndex(s => !/^[+-]?\d+$/.test(s));
+  if (bad >= 0) { res.error = `„${tok[bad].slice(0, 20)}” nije ceo broj`; return res; }
+  if (tok.length % 2) { res.error = `izlaz ima neparan broj celih brojeva (${tok.length})`; return res; }
+  const seen = new Set();
+  for (let i = 0; i < tok.length; i += 2) {
+    const x = Number(tok[i]), y = Number(tok[i + 1]), k = i / 2 + 1;
+    if (x < 1 || x > g.n || y < 1 || y > g.m) { res.error = `neonka ${k} (${tok[i]}, ${tok[i + 1]}) je van plana`; return res; }
+    if (g.plan[x * (g.m + 1) + y]) { res.error = `neonka ${k} (${x}, ${y}) je na zidu`; return res; }
+    const key = x * (g.m + 1) + y;
+    if (seen.has(key)) { res.error = `neonka ${k} (${x}, ${y}) se ponavlja`; return res; }
+    seen.add(key);
+    res.neons.push([x, y]);
+  }
+  // Light is symmetric (the same rectangle either way): one manual switch per connected group.
+  const k = res.neons.length, parent = Array.from({ length: k }, (_, i) => i);
+  const find = v => parent[v] === v ? v : (parent[v] = find(parent[v]));
+  let groups = k;
+  for (let i = 0; i < k; i++)
+    for (let j = i + 1; j < k; j++) {
+      const [xi, yi] = res.neons[i], [xj, yj] = res.neons[j];
+      if (Math.abs(xi - xj) > g.r || Math.abs(yi - yj) > g.r) continue;
+      if (wallsBetween(g, xi, yi, xj, yj)) continue;
+      const u = find(i), v = find(j);
+      if (u !== v) { parent[u] = v; groups--; }
+    }
+  const id = new Map();
+  res.group = res.neons.map((_, i) => { const root = find(i); if (!id.has(root)) id.set(root, id.size); return id.get(root); });
+  res.groups = groups;
+  res.cost = k * g.c + groups * g.p;
+  for (let i = 0; i < k; i++) {
+    const [xn, yn] = res.neons[i];
+    for (let x = Math.max(1, xn - g.r); x <= Math.min(g.n, xn + g.r); x++)
+      for (let y = Math.max(1, yn - g.r); y <= Math.min(g.m, yn + g.r); y++) {
+        const at = (x - 1) * g.m + (y - 1);
+        if (!res.lit[at] && !wallsBetween(g, xn, yn, x, y)) { res.lit[at] = res.group[i] + 1; res.cells++; }
+      }
+  }
+  if (res.cost > g.b) res.error = `ukupna cena ${res.cost} premašuje budžet ${g.b}`;
+  return res;
+}
+
+// ---- Page ----
+
+const pairs = new Map();   // case name -> { in: text, out: text }
+let current = null;
+
+function caseName(file) { return file.name.replace(/\.(in|out|txt)$/i, "").replace(/\.(in|out)$/i, ""); }
+
+async function addFiles(list) {
+  for (const f of list) {
+    const ext = /\.out(\.txt)?$/i.test(f.name) ? "out" : /\.in(\.txt)?$/i.test(f.name) ? "in" : null;
+    if (!ext) continue;
+    const name = caseName(f);
+    const entry = pairs.get(name) || {};
+    entry[ext] = await f.text();
+    pairs.set(name, entry);
+  }
+  renderCases();
+  if (!current || !pairs.has(current)) current = [...pairs.keys()].sort()[0] || null;
+  show();
+}
+
+function renderCases() {
+  const box = document.getElementById("cases");
+  box.textContent = "";
+  for (const name of [...pairs.keys()].sort()) {
+    const e = pairs.get(name), btn = document.createElement("button");
+    btn.textContent = name + (e.in ? "" : " (nema .in)") + (e.out ? "" : " (nema .out)");
+    btn.setAttribute("aria-pressed", String(name === current));
+    btn.onclick = () => { current = name; renderCases(); show(); };
+    box.appendChild(btn);
+  }
+}
+
+function row(label, value, cls) {
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td>${label}</td><td${cls ? ` id="status" class="${cls}"` : ""}></td>`;
+  tr.lastChild.textContent = value;
+  return tr;
+}
+
+let shown = null;   // { g, res } of the case on screen
+
+function show() {
+  const stats = document.getElementById("stats");
+  stats.textContent = "";
+  shown = null;
+  const e = current && pairs.get(current);
+  if (!e || !e.in) { draw(); return; }
+  let g;
+  try { g = parseInput(e.in); } catch (err) { stats.appendChild(row("Ulaz", err.message, "bad")); draw(); return; }
+  const res = evaluate(g, e.out || "");
+  let free = 0;
+  for (const v of g.kind) if (v === 0) free++;
+  stats.appendChild(row("Rešenje", res.error ? "nije važeće: " + res.error : e.out ? "važeće" : "nema izlaznog fajla",
+                        res.error || !e.out ? "bad" : "good"));
+  stats.appendChild(row("Plan", `${g.n} × ${g.m}, jačina svetlosti R = ${g.r}`));
+  stats.appendChild(row("Osvetljeno", `${res.cells} od ${free} slobodnih polja (${free ? (100 * res.cells / free).toFixed(2) : 0} %)`));
+  stats.appendChild(row("Neonke", `${res.neons.length}, ručnih paljenja ${res.groups}`));
+  stats.appendChild(row("Cena", `${res.neons.length} × ${g.c} + ${res.groups} × ${g.p} = ${res.cost} (budžet ${g.b})`));
+  shown = { g, res };
+  draw();
+}
+
+function color(group) {   // well-separated hues, one per group
+  const h = (group * 137.508) % 360;
+  return [h, 75, 55];
+}
+
+function hslToRgb(h, s, l) {
+  s /= 100; l /= 100;
+  const k = n => (n + h / 30) % 12, a = s * Math.min(l, 1 - l);
+  const f = n => l - a * Math.max(-1, Math.min(k(n) - 3, Math.min(9 - k(n), 1)));
+  return [255 * f(0), 255 * f(8), 255 * f(4)];
+}
+
+function draw() {
+  const canvas = document.getElementById("canvas"), zoom = +document.getElementById("zoom").value;
+  document.getElementById("zoomv").textContent = zoom;
+  if (!shown) { canvas.width = canvas.height = 0; return; }
+  const { g, res } = shown;
+  const img = new ImageData(g.m, g.n), px = img.data;
+  const rgb = [];
+  for (let i = 0; i < g.n * g.m; i++) {
+    let c;
+    if (g.kind[i] === 1) c = [90, 90, 90];
+    else if (g.kind[i] === 2) c = [55, 55, 55];
+    else if (res.lit[i]) {
+      const gi = res.lit[i] - 1;
+      c = rgb[gi] || (rgb[gi] = hslToRgb(...color(gi)));
+    } else c = [13, 16, 32];
+    px.set([c[0], c[1], c[2], 255], 4 * i);
+  }
+  for (const [x, y] of res.neons) px.set([255, 255, 255, 255], 4 * ((x - 1) * g.m + (y - 1)));
+  const off = document.createElement("canvas");
+  off.width = g.m; off.height = g.n;
+  off.getContext("2d").putImageData(img, 0, 0);
+  canvas.width = g.m * zoom; canvas.height = g.n * zoom;
+  const ctx = canvas.getContext("2d");
+  ctx.imageSmoothingEnabled = false;
+  ctx.drawImage(off, 0, 0, canvas.width, canvas.height);
+}
+
+document.getElementById("files").onchange = ev => addFiles(ev.target.files);
+document.getElementById("zoom").oninput = draw;
+const drop = document.getElementById("drop");
+drop.ondragover = ev => { ev.preventDefault(); drop.classList.add("over"); };
+drop.ondragleave = () => drop.classList.remove("over");
+drop.ondrop = ev => { ev.preventDefault(); drop.classList.remove("over"); addFiles(ev.dataTransfer.files); };
+document.getElementById("canvas").onmousemove = ev => {
+  if (!shown) return;
+  const { g, res } = shown, zoom = +document.getElementById("zoom").value;
+  const y = Math.floor(ev.offsetX / zoom) + 1, x = Math.floor(ev.offsetY / zoom) + 1;
+  if (x < 1 || x > g.n || y < 1 || y > g.m) return;
+  const i = (x - 1) * g.m + (y - 1), n = res.neons.findIndex(([a, b]) => a === x && b === y);
+  const what = g.kind[i] ? "zid" : n >= 0 ? `neonka ${n + 1} (grupa ${res.group[n] + 1})`
+    : res.lit[i] ? `osvetljeno (grupa ${res.lit[i]})` : "tamno";
+  document.getElementById("hover").textContent = `red ${x}, kolona ${y}: ${what}`;
+};
+draw();
+</script>
+</body>
+</html>

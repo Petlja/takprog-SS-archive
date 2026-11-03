@@ -13,7 +13,7 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 |---|---|
 | `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB). In Cyrillic, except 2016-17's and Kvalifikacije 1 2017-18's (Latin script) and the training camp's (English) |
 | `*.png` | Pictures the statement shows, if any. vOOda's `1.png`–`8.png` are its eight input pictures, matching its input tests |
-| Other files | Files the contestants were given with the task: vOOda's `compressor.cpp`, which turns a list of cells into the output format |
+| Other files | Files the contestants were given with the task: vOOda's `compressor.cpp`, which turns a list of cells into the output format, and Neonke's `neonke.html`, which shows a solution in the browser (written in 2026 in place of the lost `Neonke.jar`, with the checker's rules) |
 | `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against; Majstorija (2025-26) has no `.out` files at all |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result. Checkers marked *rewritten* replace one that couldn't be retrieved (only a Windows binary or an empty source survives): they were written in 2026 from the statement. Checkers run with an unlimited stack, as on Petlja's grader |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
@@ -68,7 +68,7 @@ tasks against your own copies too.
 | 2016-17 | SIO | [Klikeri](takprog-2016-17/4_SIO/01_klikeri) | standard | 1.5 s | 64 MB | 41 | default | — | — |
 | 2016-17 | SIO | [Zaduženja](takprog-2016-17/4_SIO/02_zaduzenja) | standard | 1.5 s | 64 MB | 30 | default | — | — |
 | 2016-17 | SIO | [Tetke](takprog-2016-17/4_SIO/03_tetke) | standard | 3 s | 192 MB | 22 | default | — | — |
-| 2016-17 | SIO | [Neonke](takprog-2016-17/4_SIO/04_neonke) | output-only | — | — | 4 | `checker.cpp` (custom, rewritten) | The `Neonke.jar` visualizer the statement mentions is lost | — |
+| 2016-17 | SIO | [Neonke](takprog-2016-17/4_SIO/04_neonke) | output-only | — | — | 4 | `checker.cpp` (custom, rewritten) | — | — |
 | 2016-17 | SIO | [Virus](takprog-2016-17/4_SIO/05_virus) | standard | 1 s | 64 MB | 50 | `checker.cpp` (custom, rewritten) | — | — |
 | 2016-17 | SIO | [Pogled](takprog-2016-17/4_SIO/06_pogled) | standard | 1 s | 64 MB | 26 | default | — | — |
 | 2016-17 | Pripreme | [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) | standard | 10 s | 256 MB | 0 | default | The figure the statement describes is lost. The limits may be Two Circles' (see testcases) | **No testcases:** Petlja's copy has Two Circles' tests instead |
@@ -363,13 +363,12 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **6 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **5 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (3 tasks)**
+**Task problems (2 tasks)**
 
 - **Lost picture (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
-- **Lost attachment for contestants (1):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 

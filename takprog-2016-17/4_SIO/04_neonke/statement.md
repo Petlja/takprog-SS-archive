@@ -95,8 +95,8 @@ U suprotnom, neka je $k$ ukupan broj polja koje vaše rešenje osvetljava. Za sv
 
 ## Testiranje i eksperimentisanje
 
-Na korišćenje vam je dat program sa kojim možete lakše da testirate svoje rešenje (`Neonke.jar`).
+Na korišćenje vam je dat program sa kojim možete lakše da testirate svoje rešenje (`neonke.html`).
 
-Pokretanjem ovog programa iz direktorijuma u kome se nalaze i odgovarajući `case-??.in` i `case-??.out` fajlovi, moći ćete da vizuelizujete vaše rešenje za date ulaze, kao i informacije poput količine polja koje ste osvetlili i ukupne cene koju ste potrošili.
+Otvorite ga u veb pregledaču i izaberite odgovarajuće `case-??.in` i `case-??.out` fajlove: moći ćete da vizuelizujete vaše rešenje za date ulaze, kao i informacije poput količine polja koje ste osvetlili i ukupne cene koju ste potrošili.
 
 Sve neonke koje se upale kao posledica jednog ručnog paljenja će unutar programa biti prikazane istom bojom.
