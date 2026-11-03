@@ -16,7 +16,7 @@ U prvom redu standardnog ulaza nalazi se jedan prirodni broj $N$ - broj računar
 
 ## Opis izlaza
 
-Opis izlaznih podataka.
+U prvom redu standardnog izlaza ispisati jedan prirodan broj $K$ - minimalan broj pokretanja antivirusa. U narednih $K$ redova ispisati po dva prirodna broja $a$ i $b$, računare za koje treba pokrenuti program, tako da putevi između njih zajedno obuhvate sve računare.
 
 ## Primer 1
 

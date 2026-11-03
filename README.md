@@ -68,7 +68,7 @@ tasks against your own copies too.
 | 2016-17 | SIO | [Zaduženja](takprog-2016-17/4_SIO/02_zaduzenja) | standard | 1.5 s | 64 MB | 30 | default | — | — |
 | 2016-17 | SIO | [Tetke](takprog-2016-17/4_SIO/03_tetke) | standard | 3 s | 192 MB | 22 | default | — | — |
 | 2016-17 | SIO | [Neonke](takprog-2016-17/4_SIO/04_neonke) | output-only | — | — | 4 | `checker.cpp` (custom, rewritten) | The `Neonke.jar` visualizer the statement mentions is lost | — |
-| 2016-17 | SIO | [Virus](takprog-2016-17/4_SIO/05_virus) | standard | 1 s | 64 MB | 50 | `checker.cpp` (custom, rewritten) | The output section is a placeholder (the example shows the format) | — |
+| 2016-17 | SIO | [Virus](takprog-2016-17/4_SIO/05_virus) | standard | 1 s | 64 MB | 50 | `checker.cpp` (custom, rewritten) | — | — |
 | 2016-17 | SIO | [Pogled](takprog-2016-17/4_SIO/06_pogled) | standard | 1 s | 64 MB | 26 | default | — | — |
 | 2016-17 | Pripreme | [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) | standard | 10 s | 256 MB | 0 | default | The figure the statement describes is lost. The limits may be Two Circles' (see testcases) | **No testcases:** Petlja's copy has Two Circles' tests instead |
 | 2016-17 | Pripreme | [CosmoCraft](takprog-2016-17/PRI/CosmoCraft) | standard | 3 s | 64 MB | 1 | default | — | — |
@@ -362,16 +362,15 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **11 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **10 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (8 tasks)**
+**Task problems (7 tasks)**
 
 - **Lost pictures (2):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) and
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
 - **Lost attachments for contestants (2):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer),
   [vOOda](takprog-2022-23/05_SIO/05_vOOda) (2022-23, the zip and `compressor.cpp`; its eight pictures have been restored).
-- **Placeholder section (1):** [Virus](takprog-2016-17/4_SIO/05_virus) (2016-17), the output description.
 - **No examples (2):** [RNK](takprog-2020-21/06_SIO/01_rnk) (2020-21), [Laz](takprog-2021-22/06_SIO/01_laz) (2021-22).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
