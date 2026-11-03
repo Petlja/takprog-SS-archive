@@ -44,9 +44,10 @@ Limits are the competition's (Planine's memory and Collecting Luggage's limits e
 files, so the limits don't apply). *Checker* is `default` when the task uses a plain token comparison and needs no
 `checker.cpp`.
 
-The last two columns list only what is missing or doesn't work; everything else is as the contest had it. "The
-2024 collection" there is the commission's collection of these tasks, `takprog-SS-zbirka-2024`. Please check the
-tasks against your own copies too.
+The last two columns list only what is missing or doesn't work; everything else is as the contest had it, except
+what was lost or never existed and was added in 2026: rewritten checkers, generated tests, drawn pictures, missing
+examples and statement sections. The commit history says what was added and why. Please check the tasks against
+your own copies too.
 
 | Season | Round | Task | Type | Time | Memory | Testcases | Checker | Task problems | Testcase problems |
 |---|---|---|---|---|---|---|---|---|---|
