@@ -1,10 +1,12 @@
 ---
-timelimit: 10
+timelimit: 2
 memlimit: 256
 ---
 https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&category=41&page=show_problem&problem=398
 
 Collecting your luggage after a flight can be far from trivial. Suitcases and bags appear on a conveyor belt, and hundreds of passengers fight for a good vantage point from which to find and retrieve their belongings. Recently, the Narita Airport Authority has decided to make this process more efficient. Before redesigning their baggage claim areas, they need a simulation program to determine how average passengers behave when collecting their luggage. This simulation assumes that passengers will always take a path of straight line segments to reach their luggage in the least amount of time. For this problem, a conveyor belt is modeled as a simple polygon. A luggage piece appears on some point of the conveyor belt, and then moves along the conveyor belt at a constant speed. A passenger is initially positioned at some point outside the conveyor belt polygon. As soon as the piece of luggage appears, the passenger moves at a constant speed (which is greater than the speed of the luggage piece) in order to pick up the luggage. The passenger’s path, which may not cross over the conveyer belt but may touch it, puts the passenger in the same position as the moving piece of luggage in the least amount of time. In the following figure, the conveyor belt is depicted as a polygon ABCDEF. The luggage starts at the top-left corner (Point A) and moves in counterclockwise direction around the polygon as shown with the small arrows. The passenger begins at point P and moves on the path that puts him and the luggage into the same place (point M in the figure) in the shortest amount of time. The passenger’s path is shown by a red arrow. This figure corresponds to the first sample input.
+
+![](luggage.png)
 
 ## Opis ulaza
 

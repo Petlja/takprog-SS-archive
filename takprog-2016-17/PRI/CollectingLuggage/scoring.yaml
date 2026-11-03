@@ -1,2 +1,6 @@
-type: testcase
+type: subtask
 score_total: 100
+groups:
+    - id: 1
+      score: 100
+      testcases: [1,2,3,4,5,6,7,8,9,10]

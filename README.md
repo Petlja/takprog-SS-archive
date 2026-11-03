@@ -12,9 +12,9 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 | File | What |
 |---|---|
 | `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB). In Cyrillic, except 2016-17's and Kvalifikacije 1 2017-18's (Latin script) and the training camp's (English) |
-| `*.png` | Pictures the statement shows, if any. vOOda's `1.png`–`8.png` are its eight input pictures, matching its input tests |
+| `*.png` | Pictures the statement shows, if any. Sportski centar's and Collecting Luggage's (2016-17) were lost and are drawn from the examples in 2026. vOOda's `1.png`–`8.png` are its eight input pictures, matching its input tests |
 | Other files | Files the contestants were given with the task: vOOda's `compressor.cpp`, which turns a list of cells into the output format, and Neonke's `neonke.html`, which shows a solution in the browser (written in 2026 in place of the lost `Neonke.jar`, with the checker's rules) |
-| `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against; Majstorija (2025-26) has no `.out` files at all |
+| `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, Collecting Luggage's (2016-17 PRI) were generated in 2026, as Petlja had none. `.out` may be empty, a placeholder or the bounds it scores against; Majstorija (2025-26) has no `.out` files at all |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result. Checkers marked *rewritten* replace one that couldn't be retrieved (only a Windows binary or an empty source survives): they were written in 2026 from the statement. Checkers run with an unlimited stack, as on Petlja's grader |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
 | `grader/` | Functional tasks only (the contestant writes functions, not a program): the competition's grader, per language, as Petlja serves it. `cpp/main.cpp` and `cpp/code.h` are compiled together with the contestant's file; `pas/` is the Pascal version from the same contest |
@@ -34,11 +34,12 @@ cases, so the statement's examples are not separate tests.
   other compilers). Every task's solutions were re-run on today's grader and pass within the limits, except where
   the table says otherwise. One limit was raised: [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19 SIO) had
   64 MB, which today's grader applies to the memory a program declares, not only what it uses, so solutions with
-  large arrays crash at start; it has 128 MB here.
+  large arrays crash at start; it has 128 MB here. Collecting Luggage's (2016-17 PRI) limits were set in 2026 with its
+  new tests.
 
 ## Tasks
 
-Limits are the competition's (Planine's memory excepted, see above). *Type* is `standard` (the program reads the input and writes the output), `functional`
+Limits are the competition's (Planine's memory and Collecting Luggage's limits excepted, see above). *Type* is `standard` (the program reads the input and writes the output), `functional`
 (the contestant writes functions; `grader/` has the main program) or `output-only` (contestants submit the output
 files, so the limits don't apply). *Checker* is `default` when the task uses a plain token comparison and needs no
 `checker.cpp`.
@@ -73,7 +74,7 @@ tasks against your own copies too.
 | 2016-17 | SIO | [Neonke](takprog-2016-17/4_SIO/04_neonke) | output-only | — | — | 4 | `checker.cpp` (custom, rewritten) | — | — |
 | 2016-17 | SIO | [Virus](takprog-2016-17/4_SIO/05_virus) | standard | 1 s | 64 MB | 50 | `checker.cpp` (custom, rewritten) | — | — |
 | 2016-17 | SIO | [Pogled](takprog-2016-17/4_SIO/06_pogled) | standard | 1 s | 64 MB | 26 | default | — | — |
-| 2016-17 | Pripreme | [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) | standard | 10 s | 256 MB | 0 | default | The figure the statement describes is lost. The limits may be Two Circles' (see testcases) | **No testcases:** Petlja's copy has Two Circles' tests instead |
+| 2016-17 | Pripreme | [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) | standard | 2 s | 256 MB | 10 | default | — | — |
 | 2016-17 | Pripreme | [CosmoCraft](takprog-2016-17/PRI/CosmoCraft) | standard | 3 s | 64 MB | 1 | default | — | — |
 | 2016-17 | Pripreme | [Count the Regions](takprog-2016-17/PRI/Count) | standard | 0.3 s | 64 MB | 1 | default | — | — |
 | 2016-17 | Pripreme | [Covered walkway](takprog-2016-17/PRI/CoveredWalkway) | standard | 100 s | 256 MB | 1 | default | — | — |
@@ -365,17 +366,10 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **4 tasks have a problem**, listed below (Collecting
-Luggage is in both lists).
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **3 tasks have a problem**, listed below.
 
-**Task problems (1 task)**
+**Testcase problems (3 tasks)**
 
-- **Lost picture (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
-- **Limits (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
-
-**Testcase problems (4 tasks)**
-
-- **No testcases (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI).
 - **Some tests from the 2024 collection, lost on Petlja (3):** [01 niz](takprog-2020-21/02_KV2/05_01_niz),
   [Pitanja](takprog-2020-21/03_KV3/04_pitanja), [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo)
   (2020-21).
