@@ -169,7 +169,7 @@ tasks against your own copies too.
 | 2019-20 | Državno | [Statistika](takprog-2019-20/05_DRZ/04_statistika) | standard | 1.5 s | 256 MB | 16 | default | — | — |
 | 2019-20 | Državno | [Spec zadatak](takprog-2019-20/05_DRZ/05_spec) | standard | 1.5 s | 256 MB | 28 | default | — | — |
 | 2019-20 | Državno | [Festival](takprog-2019-20/05_DRZ/06_festival) | standard | 2.5 s | 256 MB | 24 | `checker.cpp` (exact tokens) | — | — |
-| 2019-20 | SIO | [Brojorb](takprog-2019-20/06_SIO/01_brojorb) | output-only | — | — | 16 | default | — | Test 1 asks for the contestant's source code (0 points): the default checker always marks it wrong |
+| 2019-20 | SIO | [Brojorb](takprog-2019-20/06_SIO/01_brojorb) | output-only | — | — | 15 | default | — | — |
 | 2019-20 | SIO | [Šašavo odelo](takprog-2019-20/06_SIO/02_sasavo_odelo) | functional | 1.5 s | 512 MB | 29 | `checker.cpp` (custom) | — | — |
 | 2019-20 | SIO | [Smeštaj](takprog-2019-20/06_SIO/03_smestaj) | functional | 1.5 s | 512 MB | 52 | default | — | — |
 | 2019-20 | SIO | [Dido](takprog-2019-20/06_SIO/04_dido) | functional | 1 s | 512 MB | 30 | `checker.cpp` (custom) | — | — |
@@ -362,7 +362,7 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **12 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **11 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
 **Task problems (8 tasks)**
@@ -376,11 +376,9 @@ Luggage is in both lists).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
 
-**Testcase problems (5 tasks)**
+**Testcase problems (4 tasks)**
 
 - **No testcases (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI).
 - **Some tests from the 2024 collection, lost on Petlja (3):** [01 niz](takprog-2020-21/02_KV2/05_01_niz),
   [Pitanja](takprog-2020-21/03_KV3/04_pitanja), [Novogodišnje stablo](takprog-2020-21/03_KV3/05_novogodisnje_stablo)
   (2020-21).
-- **A test that can't be checked (1):** [Brojorb](takprog-2019-20/06_SIO/01_brojorb) (2019-20): test 1 always counts
-  as wrong.
