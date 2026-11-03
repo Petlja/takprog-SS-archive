@@ -51,7 +51,7 @@ tasks against your own copies too.
 | 2016-17 | Kvalifikacije | [Papir, kamen, makaze](takprog-2016-17/1_KV1/02_papir_kamen_makaze) | standard | 1 s | 64 MB | 22 | default | — | — |
 | 2016-17 | Kvalifikacije | [Kul kule](takprog-2016-17/1_KV1/03_kul_kule) | standard | 1 s | 64 MB | 22 | default | — | — |
 | 2016-17 | Kvalifikacije | [Filozof](takprog-2016-17/1_KV1/04_filozof) | standard | 0.5 s | 256 MB | 12 | default | — | — |
-| 2016-17 | Kvalifikacije | [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) | standard | 0.2 s | 64 MB | 12 | default | Picture `img_sportski_centar.png` lost | — |
+| 2016-17 | Kvalifikacije | [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) | standard | 0.2 s | 64 MB | 12 | default | — | — |
 | 2016-17 | Kvalifikacije | [Kružna škola](takprog-2016-17/1_KV1/06_kruzna_skola) | standard | 1 s | 256 MB | 27 | default | — | — |
 | 2016-17 | Okružno | [Krompir](takprog-2016-17/2_OKR/01_krompir) | standard | 0.5 s | 256 MB | 22 | default | — | — |
 | 2016-17 | Okružno | [Raketa](takprog-2016-17/2_OKR/02_raketa) | standard | 0.1 s | 256 MB | 27 | default | — | — |
@@ -363,13 +363,12 @@ tasks against your own copies too.
 
 All 311 tasks have their statement, limits, scoring and checker (or the default one); the 50 functional tasks have
 their grader. Five checkers couldn't be retrieved and were rewritten from the statement: Baza, Neonke, Virus
-(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **7 tasks have a problem**, listed below (Collecting
+(2016-17), Two Circles (2016-17 PRI) and Bojenje (2018-19). **6 tasks have a problem**, listed below (Collecting
 Luggage is in both lists).
 
-**Task problems (4 tasks)**
+**Task problems (3 tasks)**
 
-- **Lost pictures (2):** [Sportski centar](takprog-2016-17/1_KV1/05_sportski_centar) and
-  [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
+- **Lost picture (1):** [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17).
 - **Lost attachment for contestants (1):** [Neonke](takprog-2016-17/4_SIO/04_neonke) (2016-17, the visualizer).
 - **Limits (2):** [Planine](takprog-2018-19/06_SIO/05_planine) (2018-19): 64 MB is too tight for today's grader;
   [Collecting Luggage](takprog-2016-17/PRI/CollectingLuggage) (2016-17 PRI): the limits may be wrong.
