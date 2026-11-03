@@ -1,9 +1,9 @@
 # Takprog archive: high school
 
-Tasks from Serbian high-school informatics competitions (Takprog), restored from Petlja and checked, for the competition
-archive. Each task has everything needed to set it again: statement with examples, testcases, checker (or grader), scoring,
-and time and memory limits. The tasks are under CC BY, as the competition commission publishes them, except the six
-of the 2017 training camp (`takprog-2016-17/PRI`): those are ICPC problems, and their statements are ICPC's.
+Tasks from Serbian high-school informatics competitions (Takprog), 2016-17 to 2025-26. Each task has everything
+needed to set it again: statement with examples, testcases, checker (or grader), scoring, and time and memory limits.
+The tasks are under CC BY, as the competition commission publishes them, except the six of the 2017 training camp
+(`takprog-2016-17/PRI`): those are ICPC problems, and their statements are ICPC's.
 
 ## Layout
 
@@ -11,72 +11,16 @@ Paths follow the archive's own scheme: `takprog-{season}/{round}/{nn}_{task}/`.
 
 | File | What |
 |---|---|
-| `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB) |
-| `*.png` | Pictures the statement shows, if any |
-| `testcases/` | `NN.in` / `NN.out`: the test set the competition actually ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against |
+| `statement.md` | The statement in Markdown, with examples. Its header gives `timelimit` (seconds) and `memlimit` (MB). In Cyrillic, except 2016-17's and Kvalifikacije 1 2017-18's (Latin script) and the training camp's (English) |
+| `*.png` | Pictures the statement shows, if any. vOOda's `1.png`–`8.png` are its eight input pictures, matching its input tests |
+| `testcases/` | `NN.in` / `NN.out`: the test set the competition ran on. Where a custom checker verifies the answer itself, `.out` may be empty, a placeholder or the bounds it scores against |
 | `checker.cpp` | The competition's checker, when it had one. Called as `checker <contestant output> <expected output> <input>`. Exit code 0 = accepted, anything else = wrong; a number on stdout is the score (divided by `divisor` when `scoring.yaml` has one). Checkers marked *converted* were written for Petlja's grader before 2025, which read the exit code as the score: their own code is unchanged, and a short `main` at the end translates the result. Checkers marked *rewritten* replace one that couldn't be retrieved (only a Windows binary or an empty source survives): they were written in 2026 from the statement. Checkers run with an unlimited stack, as on Petlja's grader |
 | `scoring.yaml` | The competition's scoring: subtasks, points, public tests. `score_total: null` means each test is worth the points its checker gives |
 | `grader/` | Functional tasks only (the contestant writes functions, not a program): the competition's grader, per language, as Petlja serves it. `cpp/main.cpp` and `cpp/code.h` are compiled together with the contestant's file; `pas/` is the Pascal version from the same contest |
 
-Six missing statement illustrations (Kružna škola, Krompir, Baza, Count the Regions, Sort na stablu and Obaranje)
-and vOOda’s eight input pictures were restored from the commission’s `takprog-*` repositories. The vOOda
-pictures are named `1.png`–`8.png` as in the statement; their pixels match the corresponding archived input tests.
-
-## How a task gets here
-
-**Tests, limits, checker and scoring come from the competition on Petlja**, as the contest ran. They are taken byte
-for byte from the problem's test version that was live on the contest date, after comparing every copy on Petlja: all
-test versions, the competition, its testing and archive copies. The 2024 collection (`takprog-SS-zbirka-2024`) is not
-used for these: it has fewer tests and different limits. Only the **statement**,
-which the collection shares with the competition, comes from it.
-
-Before a task is added, solutions are run against the chosen testcases in a copy of Petlja's grader: the collection's
-author solutions where it has them, otherwise solutions submitted at the contest, which must get the verdict the contest
-recorded on every test. Functional tasks run with their grader; for output-only tasks the answers submitted at the
-contest are scored again with the checker. Anything
-missing or not working is listed in the table below, for the authors to fill in.
-
-**Seasons the collection doesn't cover** (it has 2019-20 to 2023-24) come from Petlja alone; their tasks were
-checked with solutions submitted at the contest. In 2016-17, the statements are Petlja's own, in Latin script as the contest showed them, converted from
-HTML. Petlja kept only one version of the tests, so the contest's set is the one it still has; where a round was
-also set up as a separate testing competition, the two sets were compared. The scoring was kept as per-test and
-per-subtask rows rather than a scoring file; `scoring.yaml` is rebuilt from them.
-
-The 2017 training camp (PRI, two practice contests in June and July 2017) used six ICPC problems, in English, with
-Petlja's section headings. They were judged as at ICPC: a submission solves the problem or doesn't, and Petlja has no
-scoring for them, so `scoring.yaml` gives the 100 points only for passing every test. Most have a single test file
-with many cases, so the statement's examples are not separate tests.
-
-In 2017-18 the statements are the commission's Markdown originals, in Cyrillic, as Petlja stores them (Kvalifikacije 1
-has only Petlja's HTML, converted the same way as 2016-17). Petlja moved every test file in November 2018, so all
-versions carry that date; the contest's set is the version the problem still serves, unless that one was uploaded
-after the move. Every task was also compared with a second copy that Petlja kept separately, an early collection
-of the same tasks.
-
-From 2018-19 on, Petlja kept every test version with the time it was uploaded, and the competition's scoring file. The
-contest's set is the last version uploaded before the contest ended, with any tests uploaded separately before it
-ended. Where the commission corrected tests during a contest and graded every submission again, the set is the
-corrected one.
-
-In 2019-20 and 2020-21 the statements come from the collection, except SIO, which it doesn't have (those are
-Petlja's Markdown originals). For four 2020-21 tasks Petlja's storage no longer has every test the contest graded
-(the grader of the time kept tests from earlier uploads). Where an earlier upload on Petlja still has them, they come
-from there; otherwise from the collection, which matches every test Petlja does have. Submissions accepted at the
-contest pass the completed sets. The table says which tests these are.
-
-In 2021-22 the statements come from the collection, except SIO and the EJOI and EGOI selection rounds, which it
-doesn't have: those are Petlja's Markdown originals, and their tasks were checked with solutions submitted at the
-contest.
-
-In 2022-23 and 2023-24 the statements come from the collection, SIO included, except Quaestio militaris formationis
-(2023-24 SIO): the collection has another task's statement there, so it is Petlja's Markdown original. Where the
-commission uploaded tests again during a contest, every earlier submission was graded again, so the set is the one
-Petlja had at the end.
-
-2024-25 and later have no collection: the statements are the commission's Markdown originals from Petlja, in
-Cyrillic, and the tasks were checked with solutions submitted at the contest. From the 2024-25
-selection rounds on, the contests ran on Petlja's Linux grader. In 2025-26 several checkers score each test
-themselves and there is no scoring file on Petlja; there `scoring.yaml` says `score_total: null`, as at the contest.
+The training camp's problems (`takprog-2016-17/PRI`) are judged as at ICPC: a submission solves the problem or
+doesn't, so `scoring.yaml` gives the 100 points only for passing every test. Most have a single test file with many
+cases, so the statement's examples are not separate tests.
 
 ## Limits
 
@@ -96,8 +40,9 @@ Limits are the competition's. *Type* is `standard` (the program reads the input 
 files, so the limits don't apply). *Checker* is `default` when the task uses a plain token comparison and needs no
 `checker.cpp`.
 
-The last two columns list only what is missing or doesn't work; everything else is as the contest had it.
-Please check the tasks against your own copies too.
+The last two columns list only what is missing or doesn't work; everything else is as the contest had it. "The
+2024 collection" there is the commission's collection of these tasks, `takprog-SS-zbirka-2024`. Please check the
+tasks against your own copies too.
 
 | Season | Round | Task | Type | Time | Memory | Testcases | Checker | Task problems | Testcase problems |
 |---|---|---|---|---|---|---|---|---|---|
