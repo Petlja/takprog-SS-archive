@@ -1,5 +1,5 @@
 ---
-timelimit: 100
+timelimit: 10
 memlimit: 256
 ---
 Your university wants to build a new walkway, and they want at least part of it to be covered. There are certain points which must be covered. It doesn’t matter if other points along the walkway are covered or not. The building contractor has an interesting pricing scheme. To cover the walkway from a point at x to a point at y, they will charge c+(x-y)^2, where c is a constant. Note that it is possible for x=y. If so, then the contractor would simply charge c. Given the points along the walkway and the constant c, what is the minimum cost to cover the walkway?
